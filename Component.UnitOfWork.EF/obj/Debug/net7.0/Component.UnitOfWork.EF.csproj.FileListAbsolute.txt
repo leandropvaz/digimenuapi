@@ -1,0 +1,12 @@
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\bin\Debug\net7.0\Component.UnitOfWork.EF.deps.json
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\bin\Debug\net7.0\Component.UnitOfWork.EF.dll
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\bin\Debug\net7.0\Component.UnitOfWork.EF.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.csproj.AssemblyReference.cache
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.AssemblyInfoInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.AssemblyInfo.cs
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.csproj.CoreCompileInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.dll
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\refint\Component.UnitOfWork.EF.dll
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\Component.UnitOfWork.EF.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\obj\Debug\net7.0\ref\Component.UnitOfWork.EF.dll

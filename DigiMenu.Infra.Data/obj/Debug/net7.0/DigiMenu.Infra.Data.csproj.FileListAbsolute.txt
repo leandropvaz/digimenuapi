@@ -1,0 +1,15 @@
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.deps.json
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\bin\Debug\net7.0\Component.UnitOfWork.EF.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\bin\Debug\net7.0\Component.UnitOfWork.EF.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.AssemblyInfo.cs
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.CopyComplete
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\refint\DigiMenu.Infra.Data.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Infra.Data\obj\Debug\net7.0\ref\DigiMenu.Infra.Data.dll

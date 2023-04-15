@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DigiMenu.Domain/1.0.0": {
+        "dependencies": {
+          "DigiMenu.Service": "1.0.0"
+        },
+        "runtime": {
+          "DigiMenu.Domain.dll": {}
+        }
+      },
+      "DigiMenu.Service/1.0.0": {
+        "runtime": {
+          "DigiMenu.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DigiMenu.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DigiMenu.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

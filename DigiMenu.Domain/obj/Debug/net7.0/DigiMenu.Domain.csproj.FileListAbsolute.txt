@@ -1,0 +1,15 @@
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.deps.json
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Service.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Service.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.AssemblyReference.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfoInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfo.cs
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.CopyComplete
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\refint\DigiMenu.Domain.dll
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.pdb
+C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\ref\DigiMenu.Domain.dll
