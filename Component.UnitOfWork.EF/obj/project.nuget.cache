@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SZ/zvIkZA7XMYXD6LEU61BWF8HPtUv3L3Xal+Og/Mn7NXegTnPMU7P0eHYe9ImO7DTBR1Ma4Osu/grB8ybopDg==",
+  "dgSpecHash": "KzF2av+MkQjc7VX2nPJ1sHD5xYh2dMC9oGmKlBwNOHpR1JBH1v/VmfUXuNB5/zq+mP7BXvl9ZweF5DGX6EzVIA==",
   "success": true,
-  "projectFilePath": "C:\\temp\\DigiMenu.Api\\DigiMenu.Api\\Component.UnitOfWork.EF\\Component.UnitOfWork.EF.csproj",
+  "projectFilePath": "C:\\temp\\projetos\\digimenuapi\\Component.UnitOfWork.EF\\Component.UnitOfWork.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User01\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\User01\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

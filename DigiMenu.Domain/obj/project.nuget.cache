@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "P0zk6/PP8UHUjaT/Xzazbl1R8/wXscHxDtLDpPcKA+xN3zp9c65w/KZGkhmphmoM+EjF9Ilp1mkVT9k86WfPwg==",
+  "dgSpecHash": "KZAQV8vk3U4x3dl00Ls+B0Ta0mb1GKJ2NtufpaZh+GTnJLIjVNGTgsAZQhYiFH0DPhATO966ShBtsHjetLcMIw==",
   "success": true,
-  "projectFilePath": "C:\\temp\\DigiMenu.Api\\DigiMenu.Api\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User01\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\User01\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\User01\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

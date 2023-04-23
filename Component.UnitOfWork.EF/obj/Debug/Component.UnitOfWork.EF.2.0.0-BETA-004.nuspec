@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\User01\source\repos\DigiMenu.Api\Component.UnitOfWork.EF\bin\Debug\net7.0\Component.UnitOfWork.EF.dll" target="lib\net7.0\Component.UnitOfWork.EF.dll" />
+    <file src="C:\temp\projetos\digimenuapi\Component.UnitOfWork.EF\bin\Debug\net7.0\Component.UnitOfWork.EF.dll" target="lib\net7.0\Component.UnitOfWork.EF.dll" />
   </files>
 </package>

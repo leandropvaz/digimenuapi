@@ -1,3 +1,6 @@
+using DigiMenu.Domain.Interfaces;
+using DigiMenu.Domain.Models;
+using DigiMenu.Infra.Data.EF.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigiMenu.Api.Controllers
@@ -8,17 +11,20 @@ namespace DigiMenu.Api.Controllers
     {
 
         private readonly ILogger<DigiMenuController> _logger;
+        private IDigiMenuService<comanda> _baseEstabelecimentoService;
 
-        public DigiMenuController(ILogger<DigiMenuController> logger)
+        public DigiMenuController(ILogger<DigiMenuController> logger, IDigiMenuService<comanda> baseEstabelecimentoService)
         {
             _logger = logger;
+            _baseEstabelecimentoService= baseEstabelecimentoService;
         }
 
         [HttpGet]
         [Route("Estabelicimentos")]
-        public IEnumerable<dynamic> GetEstabelicimentos()
+        public IActionResult GetEstabelicimentos()
         {
-            return null;
+            return Ok();
+            //  return Execute(() => _baseEstabelecimentoService.GetEstabelecimentos<EstabelecimentoModel>());            
         }
         [HttpGet]
         [Route("Cardapio")]
@@ -26,30 +32,19 @@ namespace DigiMenu.Api.Controllers
         {
             return null;
         }
-        [HttpGet]
-        [Route("ParcialConta")]
-        public IEnumerable<dynamic> GetParcialConta()
+        
+        private IActionResult Execute(Func<object> func)
         {
-            return null;
-        }
-        [HttpPost]
-        [Route("AbreConta")]
-        public IEnumerable<dynamic> AbreConta()
-        {
-            return null;
-        }
+            try
+            {
+                var result = func();
 
-        [HttpPost]
-        [Route("EnviaPedido")]
-        public IEnumerable<dynamic> EnviaPedido()
-        {
-            return null;
-        }
-        [HttpPost]
-        [Route("FechaConta")]
-        public IEnumerable<dynamic> FechaConta()
-        {
-            return null;
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
     }
 }

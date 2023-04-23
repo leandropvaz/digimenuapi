@@ -13,3 +13,15 @@ C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiM
 C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\refint\DigiMenu.Domain.dll
 C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.pdb
 C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Domain\obj\Debug\net7.0\ref\DigiMenu.Domain.dll
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.deps.json
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.dll
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.pdb
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.AssemblyReference.cache
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfoInputs.cache
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfo.cs
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.CoreCompileInputs.cache
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.dll
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\refint\DigiMenu.Domain.dll
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.pdb
+C:\temp\projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\ref\DigiMenu.Domain.dll

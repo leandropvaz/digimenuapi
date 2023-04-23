@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DigiMenu.Domain\DigiMenu.Domain.csproj" />
+    <ProjectReference Include="..\DigiMenu.Infra.Data\DigiMenu.Infra.Data.csproj" />
     <ProjectReference Include="..\DigiMenu.Service\DigiMenu.Service.csproj" />
   </ItemGroup>
 
