@@ -9,7 +9,7 @@ namespace DigiMenu.Infra.Data.Repository
 
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
-        private readonly DigiMenuContext _context;
+        protected readonly DigiMenuContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
         public Repository(DigiMenuContext context)

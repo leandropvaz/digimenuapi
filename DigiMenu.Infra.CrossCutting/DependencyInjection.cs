@@ -26,6 +26,12 @@ namespace DigiMenu.Infra.CrossCutting
             services.AddScoped<IComandaService, ComandaService>();
             services.AddScoped<IRepository<comanda>, Repository<comanda>>();
             services.AddScoped<IRepository<comanda_itens>, Repository<comanda_itens>>();
+
+
+            services.AddScoped<IProdutoService, ProdutoService>();
+            services.AddScoped<ProdutoRepository>();
+
+
             //services.AddScoped<ILoginService, LoginService>();
 
             services.AddSingleton(new MapperConfiguration(config =>
@@ -33,6 +39,8 @@ namespace DigiMenu.Infra.CrossCutting
                 config.CreateMap<estabelecimento, EstabelecimentoModel>().ReverseMap();
                 config.CreateMap<comanda, ComandaModel>().ReverseMap();
                 config.CreateMap<comanda_itens, Comanda_Itens_Model>().ReverseMap();
+                config.CreateMap<produtos, ProdutoModel>().ReverseMap();
+                //config.CreateMap<produtos_estabelecimento, Produto_Estabelecimento_Model>().ReverseMap();
             }).CreateMapper());
         }
     }

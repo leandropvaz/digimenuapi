@@ -26,12 +26,12 @@ namespace DigiMenu.Api.Controllers
             return Ok();
             //  return Execute(() => _baseEstabelecimentoService.GetEstabelecimentos<EstabelecimentoModel>());            
         }
-        [HttpGet]
-        [Route("Cardapio")]
-        public IEnumerable<dynamic> GetCardapio()
-        {
-            return null;
-        }
+        //[HttpGet]
+        //[Route("Cardapio")]
+        //public IEnumerable<dynamic> GetCardapio()
+        //{
+        //    return null;
+        //}
         
         private IActionResult Execute(Func<object> func)
         {
