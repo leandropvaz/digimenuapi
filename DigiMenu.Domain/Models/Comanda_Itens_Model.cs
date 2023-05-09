@@ -8,11 +8,13 @@ namespace DigiMenu.Domain.Models
 {
     public class Comanda_Itens_Model
     {
-        public Guid id { get; set; }
+        public int id { get; set; }
 
-        public Guid comanda { get; set; }
+        public int comanda { get; set; }
 
-        public Guid produto { get; set; }
+        public int produto { get; set; }
+
+
 
     }
 }

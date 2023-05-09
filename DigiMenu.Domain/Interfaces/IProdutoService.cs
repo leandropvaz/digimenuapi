@@ -4,6 +4,15 @@ namespace DigiMenu.Domain.Interfaces
 {
     public interface IProdutoService
     {
-        IEnumerable<ProdutoModel> GetProdutos(Guid id);        
+        IEnumerable<ProdutoModel> GetProdutoById(int id);
+
+        IEnumerable<ProdutoModel> GetProdutosByEstabelecimento(int id);
+
+        IEnumerable<ProdutoModel> GetProdutosByTipo(int idEstabelcimento,int idTipoProduto);
+
+        
+
+
+
     }
 }

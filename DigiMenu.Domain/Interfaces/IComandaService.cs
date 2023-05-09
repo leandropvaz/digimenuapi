@@ -4,9 +4,9 @@ namespace DigiMenu.Domain.Interfaces
 {
     public interface IComandaService
     {
-        Guid AbrirComanda(ComandaModel inputModel);
-        ComandaModel FecharComanda(Guid id);
+        int AbrirComanda(ComandaModel inputModel);
+        ComandaModel FecharComanda(int id);
         ComandaModel IncluirItemComanda(List<Comanda_Itens_Model> comandaItens);
-        ComandaModel GetComanda(Guid id);        
+        ComandaModel GetComanda(int id);        
     }
 }

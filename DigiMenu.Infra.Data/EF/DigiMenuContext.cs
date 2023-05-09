@@ -36,6 +36,8 @@ public partial class DigiMenuContext : DbContext
 
     public virtual DbSet<status> status { get; set; }
 
+    public virtual DbSet<tipoProduto> tipoProduto { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=coretech.database.windows.net;Database=digimenu;User ID=coretech;Password=Babi2505;");
@@ -44,7 +46,6 @@ public partial class DigiMenuContext : DbContext
     {
         modelBuilder.Entity<comanda>(entity =>
         {
-            entity.Property(e => e.id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.anfitriao)
                 .HasMaxLength(250)
                 .IsUnicode(false);
@@ -52,38 +53,20 @@ public partial class DigiMenuContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.dataEncerramento).HasColumnType("datetime");
-
-            entity.HasOne(d => d.mesa_estabelecimentoNavigation).WithMany(p => p.comanda)
-                .HasForeignKey(d => d.mesa_estabelecimento)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_comanda_mesa_estabelecimento");
-
-            entity.HasOne(d => d.statusNavigation).WithMany(p => p.comanda)
-                .HasForeignKey(d => d.status)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_comanda_status");
         });
 
         modelBuilder.Entity<comanda_itens>(entity =>
         {
-            entity.Property(e => e.id).ValueGeneratedNever();
-
             entity.HasOne(d => d.comandaNavigation).WithMany(p => p.comanda_itens)
                 .HasForeignKey(d => d.comanda)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_comanda_itens_comanda");
-
-            entity.HasOne(d => d.produtoNavigation).WithMany(p => p.comanda_itens)
-                .HasForeignKey(d => d.produto)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_comanda_itens_produtos_estabelecimento");
         });
 
         modelBuilder.Entity<estabelecimento>(entity =>
         {
-            entity.HasKey(e => e.id).HasName("PK__estabele__3213E83FFEE5C5D6");
+            entity.HasKey(e => e.id).HasName("PK__estabele__3213E83FCCBBABE0");
 
-            entity.Property(e => e.id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.cidade)
                 .HasMaxLength(100)
                 .IsUnicode(false);
@@ -107,7 +90,6 @@ public partial class DigiMenuContext : DbContext
 
         modelBuilder.Entity<mesa>(entity =>
         {
-            entity.Property(e => e.id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.numero)
                 .HasMaxLength(10)
                 .IsFixedLength();
@@ -115,8 +97,6 @@ public partial class DigiMenuContext : DbContext
 
         modelBuilder.Entity<mesa_estabelecimento>(entity =>
         {
-            entity.Property(e => e.id).ValueGeneratedNever();
-
             entity.HasOne(d => d.estabelecimentoNavigation).WithMany(p => p.mesa_estabelecimento)
                 .HasForeignKey(d => d.estabelecimento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -125,7 +105,7 @@ public partial class DigiMenuContext : DbContext
             entity.HasOne(d => d.mesaNavigation).WithMany(p => p.mesa_estabelecimento)
                 .HasForeignKey(d => d.mesa)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_mesa_estabelecimento_mesa_estabelecimento");
+                .HasConstraintName("FK_mesa_estabelecimento_mesa");
 
             entity.HasOne(d => d.statusNavigation).WithMany(p => p.mesa_estabelecimento)
                 .HasForeignKey(d => d.status)
@@ -148,11 +128,6 @@ public partial class DigiMenuContext : DbContext
 
             entity.Property(e => e.id).ValueGeneratedNever();
 
-            entity.HasOne(d => d.comanda_itensNavigation).WithMany(p => p.pedidos_itens)
-                .HasForeignKey(d => d.comanda_itens)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_pedido_itens_comanda_itens");
-
             entity.HasOne(d => d.pedidoNavigation).WithMany(p => p.pedidos_itens)
                 .HasForeignKey(d => d.pedido)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -161,17 +136,19 @@ public partial class DigiMenuContext : DbContext
 
         modelBuilder.Entity<produtos>(entity =>
         {
-            entity.Property(e => e.id).ValueGeneratedNever();
             entity.Property(e => e.descricao)
                 .HasMaxLength(250)
                 .IsUnicode(false);
             entity.Property(e => e.preco).HasColumnType("decimal(10, 2)");
+
+            entity.HasOne(d => d.TipoNavigation).WithMany(p => p.produtos)
+                .HasForeignKey(d => d.Tipo)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_produtos_tipoProduto");
         });
 
         modelBuilder.Entity<produtos_estabelecimento>(entity =>
         {
-            entity.Property(e => e.id).ValueGeneratedNever();
-
             entity.HasOne(d => d.estabelecimentoNavigation).WithMany(p => p.produtos_estabelecimento)
                 .HasForeignKey(d => d.estabelecimento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
@@ -185,9 +162,17 @@ public partial class DigiMenuContext : DbContext
 
         modelBuilder.Entity<status>(entity =>
         {
-            entity.Property(e => e.id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.descricao)
                 .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<tipoProduto>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("PK__tipoProd__3213E83FDEFC9EC1");
+
+            entity.Property(e => e.descricao)
+                .HasMaxLength(250)
                 .IsUnicode(false);
         });
 

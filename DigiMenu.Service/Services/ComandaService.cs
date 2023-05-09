@@ -18,24 +18,24 @@ namespace DigiMenu.Service.Services
             _comanda_itensRepository= comanda_itensRepository;
         }
 
-        public Guid AbrirComanda(ComandaModel objcomanda)
+        public int AbrirComanda(ComandaModel objcomanda)
         {
             comanda entityComanda = _mapper.Map<comanda>(objcomanda);
-            entityComanda.status = Guid.Parse("374E8939-37E9-4390-9F34-2D457479844C");
+            entityComanda.status = 1;
             _comandaRepository.Add(entityComanda);
             return entityComanda.id;
         }
 
-        public ComandaModel FecharComanda(Guid id)
+        public ComandaModel FecharComanda(int id)
         {
             comanda entity = _comandaRepository.GetById(id, p => p.comanda_itens);
-            entity.status = Guid.Parse("8BFDE2E8-6F77-454D-A66E-23A33FF2EDD6");
+            entity.status = 2;
             _comandaRepository.Update(entity);
             var outputModel = _mapper.Map<ComandaModel>(entity);
             return outputModel;
         }
 
-        public ComandaModel GetComanda(Guid id)        {
+        public ComandaModel GetComanda(int id)        {
             var entity = _comandaRepository.GetById(id, p => p.comanda_itens);
             var outputModel = _mapper.Map<ComandaModel>(entity);
             return outputModel;
@@ -46,7 +46,7 @@ namespace DigiMenu.Service.Services
             var entityComandaItens = _mapper.Map<IEnumerable<comanda_itens>>(comanda_Itens);
             _comanda_itensRepository.AddRange(entityComandaItens);
 
-            var entity = _comandaRepository.GetById(Guid.Parse("BDCF5759-058B-440A-811D-03735C521F94"), p => p.comanda_itens);
+            var entity = _comandaRepository.GetById(1, p => p.comanda_itens);
             var outputModel = _mapper.Map<ComandaModel>(entity);
             return outputModel;
         }

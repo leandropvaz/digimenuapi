@@ -6,7 +6,7 @@ namespace DigiMenu.Infra.Data.EF.Models;
 
 public partial class mesa : BaseEntity
 {
-    public Guid id { get; set; }
+    public int id { get; set; }
 
     public string numero { get; set; } = null!;
 

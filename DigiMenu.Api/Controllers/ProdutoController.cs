@@ -21,11 +21,25 @@ namespace DigiMenu.Api.Controllers
 
         
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id)
+        public IActionResult Get(int id)
         {
-            return Execute(() => _produtoservice.GetProdutos(id));
+             return Execute(() => _produtoservice.GetProdutoById(id));
         }
 
+        [HttpGet]
+        [Route("ProdutosByEstabelecimento")]
+        public IActionResult GetProdutosByEstabelecimento(int idEstabelecimento)
+        {
+            return Execute(() => _produtoservice.GetProdutosByEstabelecimento(idEstabelecimento));
+        }
+
+
+        [HttpGet]
+        [Route("ProdutosByTipo")]
+        public IActionResult GetProdutosByTipo(int idEstabelecimento, int idTipoProduto)
+        {
+            return Execute(() => _produtoservice.GetProdutosByTipo(idEstabelecimento, idTipoProduto));
+        }
 
 
         private IActionResult Execute(Func<object> func)

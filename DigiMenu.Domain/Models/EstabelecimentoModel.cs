@@ -8,7 +8,7 @@ namespace DigiMenu.Domain.Models
 {
     public class EstabelecimentoModel
     {
-        public Guid id { get; set; }
+        public int id { get; set; }
 
         public string nome { get; set; } = null!;
 

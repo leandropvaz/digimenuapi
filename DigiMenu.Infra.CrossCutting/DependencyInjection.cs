@@ -31,6 +31,9 @@ namespace DigiMenu.Infra.CrossCutting
             services.AddScoped<IProdutoService, ProdutoService>();
             services.AddScoped<ProdutoRepository>();
 
+            services.AddScoped<IEstabelecimentoService, EstabelecimentoService>();
+            services.AddScoped<EstabelecimentoRepository>();
+
 
             //services.AddScoped<ILoginService, LoginService>();
 

@@ -6,7 +6,7 @@ namespace DigiMenu.Infra.Data.EF.Models;
 
 public partial class estabelecimento : BaseEntity
 {
-    public Guid id { get; set; }
+    public int id { get; set; }
 
     public string nome { get; set; } = null!;
 

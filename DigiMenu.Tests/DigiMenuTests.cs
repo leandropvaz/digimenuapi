@@ -42,11 +42,11 @@ namespace DigiMenu.Tests
         public void InsertEstabelecimento()
         {
             estabelecimento estabelecimento = new(){
-            id= Guid.NewGuid(),
-            nome = "Bar do Thiago",
+          
+            nome = "Bar do Leandro",
             cidade= "Contagem",
             endereco = "Rua da Pedra",
-            email = "thiago@gmail.com",
+            email = "teste@gmail.com",
             estado = "MG",
             telefone = "31-9999-9999"
             };
@@ -60,7 +60,6 @@ namespace DigiMenu.Tests
             {
                 mesa mesa = new()
                 {
-                    id = Guid.NewGuid(),
                     numero = i.ToString(),
                     ativo = true,
 
@@ -75,10 +74,10 @@ namespace DigiMenu.Tests
 
                 mesa_estabelecimento mesa = new()
                 {
-                    id = Guid.NewGuid(),
-                    mesa = Guid.Parse("78FCD34C-13A5-4076-BB62-DAE1F26F7DD0"),
-                    estabelecimento = Guid.Parse("881BB5E3-06B4-4AF6-B586-028971ECDDE9"),
-                    status = Guid.Parse("374E8939-37E9-4390-9F34-2D457479844C"),
+                  
+                    mesa = 1,
+                    estabelecimento =1,
+                    status =1,
                     ativo = true,
 
                 };
@@ -91,10 +90,10 @@ namespace DigiMenu.Tests
         {
             comanda comanda = new()
             {
-                id = Guid.NewGuid(),
-                mesa_estabelecimento = Guid.Parse("50ACC4A2-4D8F-49CB-9EDC-4718F114728F"),
+
+                mesa_estabelecimento = 1,
                 anfitriao = "Alexandre",
-                status = Guid.Parse("374E8939-37E9-4390-9F34-2D457479844C"),
+                status = 1,
             };
             _comandaRepository.Add(comanda);
         }
@@ -104,9 +103,9 @@ namespace DigiMenu.Tests
         {
             comanda_itens comandaItens = new()
             {
-                id = Guid.NewGuid(),
-                produto= Guid.Parse("E41A8916-42BC-4AE4-8EFC-2ADE8E2CEC71"),
-                comanda = Guid.Parse("BDCF5759-058B-440A-811D-03735C521F94"),
+
+                produto=2,
+                comanda = 1,
             };
             _comandaItensRepository.Add(comandaItens);
         }
@@ -117,10 +116,11 @@ namespace DigiMenu.Tests
 
             produtos produto = new()
             {
-                id = Guid.NewGuid(),
+                
                 ativo = true,
-                descricao = "Batata Frita",
-                preco = (decimal)12.00
+                descricao = "Heineken 600 ML ",
+                preco = (decimal)16,
+                Tipo = 1,
 
             };
             _produtoRepository.Add(produto);
@@ -132,10 +132,10 @@ namespace DigiMenu.Tests
         {
             produtos_estabelecimento produto = new()
             {
-                id = Guid.NewGuid(),
+                
                 ativo = true,
-                estabelecimento = Guid.Parse("881BB5E3-06B4-4AF6-B586-028971ECDDE9"),
-                produto = Guid.Parse("DDCF449E-2502-4DB1-9D93-C180154312CA"),
+                estabelecimento = 1,
+                produto = 4,
             };
             _produtoEstabelecimentoRepository.Add(produto);
         }

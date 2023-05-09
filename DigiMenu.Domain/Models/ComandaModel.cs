@@ -2,13 +2,13 @@
 {
     public class ComandaModel
     {
-        public Guid id { get; set; }
+        public int id { get; set; }
 
-        public Guid mesa_estabelecimento { get; set; }
+        public int mesa_estabelecimento { get; set; }
 
         public string? anfitriao { get; set; }
 
-        public Guid status { get; set; }
+        public int status { get; set; }
 
         public DateTime dataAbertura { get; set; }
 

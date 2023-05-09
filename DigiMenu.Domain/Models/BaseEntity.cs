@@ -8,6 +8,6 @@ namespace DigiMenu.Domain.Models
 {
     public abstract class BaseEntity
     {
-        public virtual Guid id { get; set; }
+        public virtual int id { get; set; }
     }
 }

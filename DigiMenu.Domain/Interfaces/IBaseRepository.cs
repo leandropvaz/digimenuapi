@@ -6,7 +6,7 @@ namespace DigiMenu.Domain.Interfaces
     public interface IRepository<TEntity> where TEntity : BaseEntity
     {
         TEntity GetById(int id);
-        TEntity GetById(Guid id, params Expression<Func<TEntity, object>>[] includeProperties);
+        TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includeProperties);
         IEnumerable<TEntity> GetAll();
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
         void Add(TEntity entity);

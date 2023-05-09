@@ -34,3 +34,22 @@ C:\temp\projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMe
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\ref\DigiMenu.Infra.CrossCutting.dll
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.CrossCutting.deps.json
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.CrossCutting.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.CrossCutting.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Service.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\bin\Debug\net7.0\DigiMenu.Service.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.csproj.AssemblyReference.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.AssemblyInfoInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.AssemblyInfo.cs
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.csproj.CopyComplete
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\refint\DigiMenu.Infra.CrossCutting.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\DigiMenu.Infra.CrossCutting.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.CrossCutting\obj\Debug\net7.0\ref\DigiMenu.Infra.CrossCutting.dll

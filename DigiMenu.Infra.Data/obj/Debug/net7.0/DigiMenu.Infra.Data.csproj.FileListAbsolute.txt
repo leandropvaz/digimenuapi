@@ -30,3 +30,20 @@ C:\temp\projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\ref\DigiMenu.Infra.Data.dll
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Domain.dll
 C:\temp\projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.deps.json
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.runtimeconfig.json
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\bin\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.AssemblyReference.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.AssemblyInfoInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.AssemblyInfo.cs
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.CoreCompileInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.csproj.CopyComplete
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\refint\DigiMenu.Infra.Data.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\DigiMenu.Infra.Data.genruntimeconfig.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Infra.Data\obj\Debug\net7.0\ref\DigiMenu.Infra.Data.dll

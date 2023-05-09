@@ -64,7 +64,7 @@ namespace DigiMenu.Infra.Data.Repository
             _context.SaveChanges();
         }
 
-        public TEntity GetById(Guid id, params Expression<Func<TEntity, object>>[] includeProperties)
+        public TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includeProperties)
         {
             IQueryable<TEntity> query = _context.Set<TEntity>();
 

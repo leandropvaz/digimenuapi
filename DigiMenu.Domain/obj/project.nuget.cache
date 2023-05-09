@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KZAQV8vk3U4x3dl00Ls+B0Ta0mb1GKJ2NtufpaZh+GTnJLIjVNGTgsAZQhYiFH0DPhATO966ShBtsHjetLcMIw==",
+  "dgSpecHash": "9NtB0doZWwgPnlJ4Yi/Tt24P679V02X3XcvkyWA+7Pi4YH6i5F/YUg5VAdmOijsDwE+jc4dFeEnCpui9TV+zZw==",
   "success": true,
-  "projectFilePath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
+  "projectFilePath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\User01\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
-    "C:\\Users\\User01\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\User01\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+    "C:\\Users\\nb29554\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\nb29554\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\nb29554\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

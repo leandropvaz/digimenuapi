@@ -21,7 +21,7 @@ namespace DigiMenu.Api.Controllers
 
         
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id)
+        public IActionResult Get(int id)
         {
             return Execute(() => _comandaService.GetComanda(id));
         }
@@ -39,7 +39,7 @@ namespace DigiMenu.Api.Controllers
         }
         [HttpPut]
         [Route("FecharComanda")]
-        public IActionResult FecharComanda(Guid id)
+        public IActionResult FecharComanda(int id)
         {
             return Execute(() => _comandaService.FecharComanda(id));
         }

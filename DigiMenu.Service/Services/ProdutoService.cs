@@ -18,9 +18,23 @@ namespace DigiMenu.Service.Services
         }
 
 
-        public IEnumerable<ProdutoModel> GetProdutos(Guid id)
+        public IEnumerable<ProdutoModel> GetProdutoById(int id)
         {
-            var entity = _produtoRepository.GetByProdutosEstabelecimento(id).GetAwaiter().GetResult();
+            var entity = _produtoRepository.GetProdutoById(id).GetAwaiter().GetResult();
+            var outputModel = _mapper.Map<IEnumerable<ProdutoModel>>(entity);
+            return outputModel;
+        }
+
+        public IEnumerable<ProdutoModel> GetProdutosByEstabelecimento(int idEstabelecimento)
+        {
+            var entity = _produtoRepository.GetByProdutosEstabelecimento(idEstabelecimento).GetAwaiter().GetResult();
+            var outputModel = _mapper.Map<IEnumerable<ProdutoModel>>(entity);
+            return outputModel;
+        }
+
+        public IEnumerable<ProdutoModel> GetProdutosByTipo(int idEstabelecimento, int idTipoProduto)
+        {
+            var entity = _produtoRepository.GetProdutosByTipoProdutos(idEstabelecimento, idTipoProduto).GetAwaiter().GetResult();
             var outputModel = _mapper.Map<IEnumerable<ProdutoModel>>(entity);
             return outputModel;
         }

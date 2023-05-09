@@ -8751,24 +8751,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User01\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nb29554\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Tests\\DigiMenu.Tests.csproj",
+      "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Tests\\DigiMenu.Tests.csproj",
       "projectName": "DigiMenu.Tests",
-      "projectPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Tests\\DigiMenu.Tests.csproj",
-      "packagesPath": "C:\\Users\\User01\\.nuget\\packages\\",
-      "outputPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Tests\\obj\\",
+      "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Tests\\DigiMenu.Tests.csproj",
+      "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8782,11 +8777,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj": {
-              "projectPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj"
+            "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj": {
+              "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj"
             },
-            "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj": {
-              "projectPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj"
+            "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj": {
+              "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj"
             }
           }
         }
@@ -8846,7 +8841,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

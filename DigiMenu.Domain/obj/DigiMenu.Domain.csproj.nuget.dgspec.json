@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {}
+    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {}
   },
   "projects": {
-    "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
+    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
+        "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
         "projectName": "DigiMenu.Domain",
-        "projectPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
-        "packagesPath": "C:\\Users\\User01\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\projetos\\digimenuapi\\DigiMenu.Domain\\obj\\",
+        "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
+        "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
