@@ -40,15 +40,5 @@ namespace DigiMenu.Service.Services
             var outputModel = _mapper.Map<ComandaModel>(entity);
             return outputModel;
         }
-
-        //public ComandaModel IncluirItemComanda(List<Comanda_Itens_Model> comanda_Itens)
-        //{
-        //    var entityComandaItens = _mapper.Map<IEnumerable<comanda_itens>>(comanda_Itens);
-        //    _comanda_itensRepository.AddRange(entityComandaItens);
-
-        //    var entity = _comandaRepository.GetById(1, p => p.comanda_itens);
-        //    var outputModel = _mapper.Map<ComandaModel>(entity);
-        //    return outputModel;
-        //}
     }
 }

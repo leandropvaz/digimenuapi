@@ -1,4 +1,7 @@
-﻿using DigiMenu.Domain.Interfaces;
+﻿using AutoMapper;
+using DigiMenu.Domain.Interfaces;
+using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF;
 using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
@@ -30,9 +33,30 @@ namespace DigiMenu.Tests
             services.AddScoped<IRepository<comanda_itens>, Repository<comanda_itens>>();
             services.AddScoped<IRepository<produtos>, Repository<produtos>>();
             services.AddScoped<IRepository<produtos_estabelecimento>, Repository<produtos_estabelecimento>>();
+            
+            services.AddScoped<IPedidoService, PedidoService>();
+            services.AddScoped<PedidoRepository>();
 
 
             services.AddScoped<IDigiMenuService<estabelecimento>, DigiMenuService<estabelecimento>>();
+
+
+            services.AddSingleton(new MapperConfiguration(config =>
+            {
+                config.CreateMap<estabelecimento, EstabelecimentoModel>().ReverseMap();
+                config.CreateMap<comanda, ComandaModel>().ReverseMap();
+                config.CreateMap<comanda_itens, Comanda_Itens_Model>().ReverseMap();
+                config.CreateMap<produtos, ProdutoModel>().ReverseMap();
+                config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
+                config.CreateMap<pedidos, PedidoModel>().ReverseMap();
+                config.CreateMap<pedido_itens, Pedido_Itens_Model>().ReverseMap();
+                config.CreateMap<pedidos, PedidoRequest>().ReverseMap();
+                config.CreateMap<pedido_itens, PedidoItensRequest>().ReverseMap();
+
+                //config.CreateMap<produtos_estabelecimento, Produto_Estabelecimento_Model>().ReverseMap();
+            }).CreateMapper());
+
+
             // services.AddDatabaseMetadataService(config.GetSection(nameof(DatabaseMetadataSettings)).GetSection("ConnectionString").Value);
             return services;
         }

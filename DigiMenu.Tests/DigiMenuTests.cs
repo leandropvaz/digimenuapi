@@ -1,9 +1,11 @@
 
 using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF;
 using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
+using DigiMenu.Service.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DigiMenu.Tests
@@ -17,11 +19,13 @@ namespace DigiMenu.Tests
         private IRepository<produtos_estabelecimento> _produtoEstabelecimentoRepository;
         private IRepository<mesa_estabelecimento> _mesaEstabelecimentoRepository;
         private IRepository<comanda> _comandaRepository;
+        private IPedidoService _pedidoService;
         public DigiMenuTests()
         {
             var services = Bootstrap.Start();
 
             var _digiMenuContext = services.BuildServiceProvider().GetService<DigiMenuContext>();
+
             _baseRepository = services.BuildServiceProvider().GetRequiredService<IRepository<estabelecimento>>();
             _mesaRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa>>();
             _mesaEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa_estabelecimento>>();
@@ -29,6 +33,8 @@ namespace DigiMenu.Tests
             
             _produtoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos>>();
             _produtoEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos_estabelecimento>>();
+
+            _pedidoService = services.BuildServiceProvider().GetRequiredService<IPedidoService>();
         }
 
         [Fact]
@@ -137,6 +143,29 @@ namespace DigiMenu.Tests
                 produto = 4,
             };
             _produtoEstabelecimentoRepository.Add(produto);
+        }
+
+        [Fact]
+        public void InserePedido()
+        {
+            PedidoItensRequest itens = new PedidoItensRequest();
+            itens.status = 1;
+            itens.produto = 2;
+            itens.quantidade = 10;
+
+
+
+            PedidoRequest pedido = new()
+            {
+
+                comanda = 1,
+                observacao = "Teste",
+                responsavel = "Leandro",
+                status = 1,
+                pedido_itens = new() { itens}
+            };
+
+            _pedidoService.FazerPedido(pedido);
         }
     }
 }

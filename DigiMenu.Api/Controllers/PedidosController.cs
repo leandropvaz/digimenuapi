@@ -1,5 +1,6 @@
 using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +28,7 @@ namespace DigiMenu.Api.Controllers
         //}
         [HttpPost]
         [Route("FazerPedido")]
-        public IActionResult FazerPedido([FromBody] PedidoModel pedido)
+        public IActionResult FazerPedido([FromBody] PedidoRequest pedido)
         {
             return Execute(() => _pedidoService.FazerPedido(pedido));
         }

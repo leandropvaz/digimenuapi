@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF;
 using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
@@ -20,6 +21,8 @@ namespace DigiMenu.Infra.CrossCutting
                 options.EnableSensitiveDataLogging(false);
                 options.EnableDetailedErrors(false);
             });
+
+
             services.AddScoped<IRepository<estabelecimento>, Repository<estabelecimento>>();
             services.AddScoped<IDigiMenuService<estabelecimento>, DigiMenuService<estabelecimento>>();
             
@@ -49,6 +52,9 @@ namespace DigiMenu.Infra.CrossCutting
                 config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
                 config.CreateMap<pedidos, PedidoModel>().ReverseMap();
                 config.CreateMap<pedido_itens, Pedido_Itens_Model>().ReverseMap();
+                config.CreateMap<pedidos, PedidoRequest>().ReverseMap();
+                config.CreateMap<pedido_itens, PedidoItensRequest>().ReverseMap();
+
                 //config.CreateMap<produtos_estabelecimento, Produto_Estabelecimento_Model>().ReverseMap();
             }).CreateMapper());
         }

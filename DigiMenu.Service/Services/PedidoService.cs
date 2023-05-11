@@ -3,6 +3,7 @@ using DigiMenu.Domain.Models;
 using AutoMapper;
 using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
+using DigiMenu.Domain.Models.Request;
 
 namespace DigiMenu.Service.Services
 {
@@ -17,9 +18,11 @@ namespace DigiMenu.Service.Services
             _pedidoRepository = pedidoRepository;
         }
 
-        public int FazerPedido(PedidoModel pedido)
+        public int FazerPedido(PedidoRequest pedido)
         {
-            throw new NotImplementedException();
+            pedidos entity = _mapper.Map<pedidos>(pedido);
+            _pedidoRepository.Add(entity);
+            return entity.id;
         }
     }
 }
