@@ -14,7 +14,7 @@
 
         public DateTime? dataEncerramento { get; set; }
 
-        public virtual ICollection<Comanda_Itens_Model> comanda_itens { get; set; } = new List<Comanda_Itens_Model>();
+        public virtual ICollection<PedidoModel> pedidos { get; set; } = new List<PedidoModel>();
 
 
     }

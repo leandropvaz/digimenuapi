@@ -24,8 +24,8 @@ namespace DigiMenu.Infra.CrossCutting
             services.AddScoped<IDigiMenuService<estabelecimento>, DigiMenuService<estabelecimento>>();
             
             services.AddScoped<IComandaService, ComandaService>();
-            services.AddScoped<IRepository<comanda>, Repository<comanda>>();
-            services.AddScoped<IRepository<comanda_itens>, Repository<comanda_itens>>();
+            services.AddScoped<ComandaRepository>();
+            //services.AddScoped<IRepository<comanda>, Repository<comanda>>();
 
 
             services.AddScoped<IProdutoService, ProdutoService>();
@@ -33,6 +33,9 @@ namespace DigiMenu.Infra.CrossCutting
 
             services.AddScoped<IEstabelecimentoService, EstabelecimentoService>();
             services.AddScoped<EstabelecimentoRepository>();
+
+            services.AddScoped<IPedidoService, PedidoService>();
+            services.AddScoped<PedidoRepository>();
 
 
             //services.AddScoped<ILoginService, LoginService>();
@@ -43,6 +46,9 @@ namespace DigiMenu.Infra.CrossCutting
                 config.CreateMap<comanda, ComandaModel>().ReverseMap();
                 config.CreateMap<comanda_itens, Comanda_Itens_Model>().ReverseMap();
                 config.CreateMap<produtos, ProdutoModel>().ReverseMap();
+                config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
+                config.CreateMap<pedidos, PedidoModel>().ReverseMap();
+                config.CreateMap<pedido_itens, Pedido_Itens_Model>().ReverseMap();
                 //config.CreateMap<produtos_estabelecimento, Produto_Estabelecimento_Model>().ReverseMap();
             }).CreateMapper());
         }

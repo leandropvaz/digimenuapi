@@ -16,5 +16,7 @@ public partial class produtos_estabelecimento : BaseEntity
 
     public virtual estabelecimento estabelecimentoNavigation { get; set; } = null!;
 
+    public virtual ICollection<pedido_itens> pedido_itens { get; set; } = new List<pedido_itens>();
+
     public virtual produtos produtoNavigation { get; set; } = null!;
 }

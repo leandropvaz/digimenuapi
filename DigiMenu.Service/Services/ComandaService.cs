@@ -2,20 +2,19 @@
 using DigiMenu.Domain.Models;
 using AutoMapper;
 using DigiMenu.Infra.Data.EF.Models;
+using DigiMenu.Infra.Data.Repository;
 
 namespace DigiMenu.Service.Services
 {
     public class ComandaService : IComandaService
     {
         private readonly IMapper _mapper;
-        private readonly IRepository<comanda> _comandaRepository;
-        private readonly IRepository<comanda_itens> _comanda_itensRepository;
+        private ComandaRepository _comandaRepository;
 
-        public ComandaService(IRepository<comanda> comandaRepository, IRepository<comanda_itens> comanda_itensRepository, IMapper mapper)
+        public ComandaService(ComandaRepository comandaRepository, IMapper mapper)
         {
             _mapper = mapper;
             _comandaRepository = comandaRepository;
-            _comanda_itensRepository= comanda_itensRepository;
         }
 
         public int AbrirComanda(ComandaModel objcomanda)
@@ -26,29 +25,30 @@ namespace DigiMenu.Service.Services
             return entityComanda.id;
         }
 
-        public ComandaModel FecharComanda(int id)
+        //public ComandaModel FecharComanda(int id)
+        //{
+        //    comanda entity = _comandaRepository.GetById(id, p => p.comanda_itens);
+        //    entity.status = 2;
+        //    _comandaRepository.Update(entity);
+        //    var outputModel = _mapper.Map<ComandaModel>(entity);
+        //    return outputModel;
+        //}
+
+        public ComandaModel GetComanda(int id)
         {
-            comanda entity = _comandaRepository.GetById(id, p => p.comanda_itens);
-            entity.status = 2;
-            _comandaRepository.Update(entity);
+            var entity = _comandaRepository.GetById(id, p => p.pedidos);
             var outputModel = _mapper.Map<ComandaModel>(entity);
             return outputModel;
         }
 
-        public ComandaModel GetComanda(int id)        {
-            var entity = _comandaRepository.GetById(id, p => p.comanda_itens);
-            var outputModel = _mapper.Map<ComandaModel>(entity);
-            return outputModel;
-        }
+        //public ComandaModel IncluirItemComanda(List<Comanda_Itens_Model> comanda_Itens)
+        //{
+        //    var entityComandaItens = _mapper.Map<IEnumerable<comanda_itens>>(comanda_Itens);
+        //    _comanda_itensRepository.AddRange(entityComandaItens);
 
-        public ComandaModel IncluirItemComanda(List<Comanda_Itens_Model> comanda_Itens)
-        {
-            var entityComandaItens = _mapper.Map<IEnumerable<comanda_itens>>(comanda_Itens);
-            _comanda_itensRepository.AddRange(entityComandaItens);
-
-            var entity = _comandaRepository.GetById(1, p => p.comanda_itens);
-            var outputModel = _mapper.Map<ComandaModel>(entity);
-            return outputModel;
-        }
+        //    var entity = _comandaRepository.GetById(1, p => p.comanda_itens);
+        //    var outputModel = _mapper.Map<ComandaModel>(entity);
+        //    return outputModel;
+        //}
     }
 }

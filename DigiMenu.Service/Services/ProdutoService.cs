@@ -38,5 +38,12 @@ namespace DigiMenu.Service.Services
             var outputModel = _mapper.Map<IEnumerable<ProdutoModel>>(entity);
             return outputModel;
         }
+
+        public IEnumerable<TipoProdutoModel> GetTipoProdutos()
+        {
+            var entity = _produtoRepository.GetTipoProdutos().GetAwaiter().GetResult();
+            var outputModel = _mapper.Map<IEnumerable<TipoProdutoModel>>(entity);
+            return outputModel;
+        }
     }
 }

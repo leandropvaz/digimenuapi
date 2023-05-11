@@ -1,15 +1,24 @@
-﻿using System;
+﻿using DigiMenu.Domain.Models;
+using System;
 using System.Collections.Generic;
 
 namespace DigiMenu.Infra.Data.EF.Models;
 
-public partial class pedido_itens
+public partial class pedido_itens : BaseEntity
 {
-    public Guid id { get; set; }
+    public int id { get; set; }
 
-    public Guid pedido { get; set; }
+    public int pedido { get; set; }
 
-    public Guid comanda_itens { get; set; }
+    public int produto { get; set; }
 
-    public virtual comanda_itens comanda_itensNavigation { get; set; } = null!;
+    public int quantidade { get; set; }
+
+    public int status { get; set; }
+
+    public virtual pedidos pedidoNavigation { get; set; } = null!;
+
+    public virtual produtos_estabelecimento produtoNavigation { get; set; } = null!;
+
+    public virtual status statusNavigation { get; set; } = null!;
 }

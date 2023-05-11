@@ -10,9 +10,6 @@ namespace DigiMenu.Domain.Interfaces
 
         IEnumerable<ProdutoModel> GetProdutosByTipo(int idEstabelcimento,int idTipoProduto);
 
-        
-
-
-
+        IEnumerable<TipoProdutoModel> GetTipoProdutos();   
     }
 }

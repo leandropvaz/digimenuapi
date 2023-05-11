@@ -46,5 +46,12 @@ namespace DigiMenu.Infra.Data.Repository
 
             return result;
         }
+
+        public async Task<IEnumerable<tipoProduto>> GetTipoProdutos()
+        {
+            var result = await base._context.tipoProduto.ToListAsync();
+
+            return result;
+        }
     }
 }

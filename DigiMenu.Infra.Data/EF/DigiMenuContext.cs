@@ -18,17 +18,15 @@ public partial class DigiMenuContext : DbContext
 
     public virtual DbSet<comanda> comanda { get; set; }
 
-    public virtual DbSet<comanda_itens> comanda_itens { get; set; }
-
     public virtual DbSet<estabelecimento> estabelecimento { get; set; }
 
     public virtual DbSet<mesa> mesa { get; set; }
 
     public virtual DbSet<mesa_estabelecimento> mesa_estabelecimento { get; set; }
 
-    public virtual DbSet<pedidos> pedidos { get; set; }
+    public virtual DbSet<pedido_itens> pedido_itens { get; set; }
 
-    public virtual DbSet<pedidos_itens> pedidos_itens { get; set; }
+    public virtual DbSet<pedidos> pedidos { get; set; }
 
     public virtual DbSet<produtos> produtos { get; set; }
 
@@ -53,14 +51,6 @@ public partial class DigiMenuContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.dataEncerramento).HasColumnType("datetime");
-        });
-
-        modelBuilder.Entity<comanda_itens>(entity =>
-        {
-            entity.HasOne(d => d.comandaNavigation).WithMany(p => p.comanda_itens)
-                .HasForeignKey(d => d.comanda)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_comanda_itens_comanda");
         });
 
         modelBuilder.Entity<estabelecimento>(entity =>
@@ -113,25 +103,44 @@ public partial class DigiMenuContext : DbContext
                 .HasConstraintName("FK_mesa_estabelecimento_status");
         });
 
-        modelBuilder.Entity<pedidos>(entity =>
+        modelBuilder.Entity<pedido_itens>(entity =>
         {
-            entity.Property(e => e.id).ValueGeneratedNever();
-            entity.Property(e => e.dataPedido).HasColumnType("datetime");
-            entity.Property(e => e.responsavel)
-                .HasMaxLength(250)
-                .IsUnicode(false);
-        });
-
-        modelBuilder.Entity<pedidos_itens>(entity =>
-        {
-            entity.HasKey(e => e.id).HasName("PK_Table_1");
-
-            entity.Property(e => e.id).ValueGeneratedNever();
-
-            entity.HasOne(d => d.pedidoNavigation).WithMany(p => p.pedidos_itens)
+            entity.HasOne(d => d.pedidoNavigation).WithMany(p => p.pedido_itens)
                 .HasForeignKey(d => d.pedido)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_pedido_itens_pedidos");
+
+            entity.HasOne(d => d.produtoNavigation).WithMany(p => p.pedido_itens)
+                .HasForeignKey(d => d.produto)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_pedido_itens_produtos_estabelecimento");
+
+            entity.HasOne(d => d.statusNavigation).WithMany(p => p.pedido_itens)
+                .HasForeignKey(d => d.status)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_pedido_itens_status");
+        });
+
+        modelBuilder.Entity<pedidos>(entity =>
+        {
+            entity.Property(e => e.dataPedidoEntregue).HasColumnType("datetime");
+            entity.Property(e => e.dataPedidoFeito)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.observacao).IsUnicode(false);
+            entity.Property(e => e.responsavel)
+                .HasMaxLength(250)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.comandaNavigation).WithMany(p => p.pedidos)
+                .HasForeignKey(d => d.comanda)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_pedidos_comanda");
+
+            entity.HasOne(d => d.statusNavigation).WithMany(p => p.pedidos)
+                .HasForeignKey(d => d.status)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_pedidos_itens_status");
         });
 
         modelBuilder.Entity<produtos>(entity =>

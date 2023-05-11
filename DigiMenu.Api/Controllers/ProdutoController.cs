@@ -41,6 +41,13 @@ namespace DigiMenu.Api.Controllers
             return Execute(() => _produtoservice.GetProdutosByTipo(idEstabelecimento, idTipoProduto));
         }
 
+        [HttpGet]
+        [Route("TipoProdutos")]
+        public IActionResult GetTipoProdutos()
+        {
+            return Execute(() => _produtoservice.GetTipoProdutos());
+        }
+
 
         private IActionResult Execute(Func<object> func)
         {

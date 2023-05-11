@@ -18,5 +18,5 @@ public partial class comanda : BaseEntity
 
     public DateTime? dataEncerramento { get; set; }
 
-    public virtual ICollection<comanda_itens> comanda_itens { get; set; } = new List<comanda_itens>();
+    public virtual ICollection<pedidos> pedidos { get; set; } = new List<pedidos>();
 }

@@ -19,10 +19,11 @@ namespace DigiMenu.Api.Controllers
             _comandaService = comandaService;
         }
 
-        
+
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
+            
             return Execute(() => _comandaService.GetComanda(id));
         }
         [HttpPost]
@@ -31,20 +32,14 @@ namespace DigiMenu.Api.Controllers
         {
             return Execute(() => _comandaService.AbrirComanda(comanda));
         }
-        [HttpPost]
-        [Route("IncluirItem")]
-        public IActionResult IncluirItemComanda([FromBody] List<Comanda_Itens_Model> comandaItens)
-        {
-            return Execute(() => _comandaService.IncluirItemComanda(comandaItens));
-        }
+
         [HttpPut]
         [Route("FecharComanda")]
-        public IActionResult FecharComanda(int id)
+        public IActionResult FecharComanda(int idComanda)
         {
-            return Execute(() => _comandaService.FecharComanda(id));
+            return Ok();
+            //return Execute(() => _comandaService.FecharComanda(idComanda));
         }
-
-
 
 
         private IActionResult Execute(Func<object> func)

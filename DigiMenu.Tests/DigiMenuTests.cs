@@ -17,7 +17,6 @@ namespace DigiMenu.Tests
         private IRepository<produtos_estabelecimento> _produtoEstabelecimentoRepository;
         private IRepository<mesa_estabelecimento> _mesaEstabelecimentoRepository;
         private IRepository<comanda> _comandaRepository;
-        private IRepository<comanda_itens> _comandaItensRepository;
         public DigiMenuTests()
         {
             var services = Bootstrap.Start();
@@ -27,7 +26,7 @@ namespace DigiMenu.Tests
             _mesaRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa>>();
             _mesaEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa_estabelecimento>>();
             _comandaRepository = services.BuildServiceProvider().GetRequiredService<IRepository<comanda>>();
-            _comandaItensRepository = services.BuildServiceProvider().GetRequiredService<IRepository<comanda_itens>>();
+            
             _produtoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos>>();
             _produtoEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos_estabelecimento>>();
         }
@@ -98,17 +97,17 @@ namespace DigiMenu.Tests
             _comandaRepository.Add(comanda);
         }
 
-        [Fact]
-        public void InsertComandaItens()
-        {
-            comanda_itens comandaItens = new()
-            {
+        //[Fact]
+        //public void InsertComandaItens()
+        //{
+        //    comanda_itens comandaItens = new()
+        //    {
 
-                produto=2,
-                comanda = 1,
-            };
-            _comandaItensRepository.Add(comandaItens);
-        }
+        //        produto=2,
+        //        comanda = 1,
+        //    };
+        //    _comandaItensRepository.Add(comandaItens);
+        //}
 
         [Fact]
         public void InsertProdutos()
