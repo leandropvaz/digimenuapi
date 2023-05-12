@@ -2,6 +2,7 @@ using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
 using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF.Models;
+using DigiMenu.Service.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigiMenu.Api.Controllers
@@ -31,6 +32,14 @@ namespace DigiMenu.Api.Controllers
         public IActionResult FazerPedido([FromBody] PedidoRequest pedido)
         {
             return Execute(() => _pedidoService.FazerPedido(pedido));
+        }
+
+        [HttpGet]
+        [Route("PedidoByComanda")]
+        public IActionResult Get(int id)
+        {
+
+            return Execute(() => _pedidoService.GetPedidos(id));
         }
 
         private IActionResult Execute(Func<object> func)

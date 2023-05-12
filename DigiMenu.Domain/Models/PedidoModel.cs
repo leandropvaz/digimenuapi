@@ -8,6 +8,7 @@ namespace DigiMenu.Domain.Models
 {
     public class PedidoModel
     {
+        public int id { get; set; }
         public int comanda { get; set; }
 
         public int status { get; set; }
