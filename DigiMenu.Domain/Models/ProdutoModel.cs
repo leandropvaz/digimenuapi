@@ -12,6 +12,8 @@ namespace DigiMenu.Domain.Models
 
         public string descricao { get; set; } = null!;
 
+        public int estabelecimento { get; set; }
+
         public decimal preco { get; set; }
 
         public bool ativo { get; set; }

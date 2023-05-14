@@ -12,5 +12,9 @@ public partial class mesa : BaseEntity
 
     public bool ativo { get; set; }
 
-    public virtual ICollection<mesa_estabelecimento> mesa_estabelecimento { get; set; } = new List<mesa_estabelecimento>();
+    public int estabelecimento { get; set; }
+
+    public virtual ICollection<comanda> comanda { get; set; } = new List<comanda>();
+
+    public virtual estabelecimento estabelecimentoNavigation { get; set; } = null!;
 }

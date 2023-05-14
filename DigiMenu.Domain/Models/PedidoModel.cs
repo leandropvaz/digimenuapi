@@ -9,6 +9,7 @@ namespace DigiMenu.Domain.Models
     public class PedidoModel
     {
         public int id { get; set; }
+
         public int comanda { get; set; }
 
         public int status { get; set; }
@@ -21,7 +22,7 @@ namespace DigiMenu.Domain.Models
 
         public DateTime? dataPedidoEntregue { get; set; }
 
-
         public virtual ICollection<Pedido_Itens_Model> pedido_itens { get; set; } = new List<Pedido_Itens_Model>();
+
     }
 }

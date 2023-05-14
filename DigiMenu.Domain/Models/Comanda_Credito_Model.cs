@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace DigiMenu.Domain.Models
 {
-    public class Comanda_Itens_Model
+    public class Comanda_Credito_Model
     {
         public int id { get; set; }
 
         public int comanda { get; set; }
 
-        public int produto { get; set; }
+        public decimal valor { get; set; }
 
-
+        public string? responsavel { get; set; }
 
     }
 }

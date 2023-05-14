@@ -20,10 +20,8 @@ namespace DigiMenu.Infra.Data.Repository
 
         public async Task<IEnumerable<produtos>> GetByProdutosEstabelecimento(int estabelecimentoId)
         {
-            var result = await base._context.produtos_estabelecimento
-                .Include(x => x.produtoNavigation)
-                .Where(x => x.estabelecimento == estabelecimentoId)
-                .Select(x=>x.produtoNavigation).ToListAsync();
+            var result = await base._context.produtos
+                .Where(x => x.estabelecimento == estabelecimentoId).ToListAsync();
 
             return result;
         }
@@ -39,10 +37,8 @@ namespace DigiMenu.Infra.Data.Repository
 
         public async Task<IEnumerable<produtos>> GetProdutosByTipoProdutos(int idEstabelcimento, int idTipoProduto)
         {
-            var result = await base._context.produtos_estabelecimento
-                .Include(x => x.produtoNavigation)
-                .Where(x => x.estabelecimento == idEstabelcimento && x.produtoNavigation.Tipo==idTipoProduto)
-                .Select(x => x.produtoNavigation).ToListAsync();
+            var result = await base._context.produtos
+                .Where(x => x.estabelecimento == idEstabelcimento && x.Tipo==idTipoProduto).ToListAsync();
 
             return result;
         }

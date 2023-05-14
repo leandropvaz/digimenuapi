@@ -28,11 +28,11 @@ namespace DigiMenu.Tests
 
             services.AddScoped<IRepository<estabelecimento>, Repository<estabelecimento>>();
             services.AddScoped<IRepository<mesa>, Repository<mesa>>();
-            services.AddScoped<IRepository<mesa_estabelecimento>, Repository<mesa_estabelecimento>>();
+           
             services.AddScoped<IRepository<comanda>, Repository<comanda>>();
-            services.AddScoped<IRepository<comanda_itens>, Repository<comanda_itens>>();
+
             services.AddScoped<IRepository<produtos>, Repository<produtos>>();
-            services.AddScoped<IRepository<produtos_estabelecimento>, Repository<produtos_estabelecimento>>();
+         
             
             services.AddScoped<IPedidoService, PedidoService>();
             services.AddScoped<PedidoRepository>();
@@ -45,7 +45,7 @@ namespace DigiMenu.Tests
             {
                 config.CreateMap<estabelecimento, EstabelecimentoModel>().ReverseMap();
                 config.CreateMap<comanda, ComandaModel>().ReverseMap();
-                config.CreateMap<comanda_itens, Comanda_Itens_Model>().ReverseMap();
+
                 config.CreateMap<produtos, ProdutoModel>().ReverseMap();
                 config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
                 config.CreateMap<pedidos, PedidoModel>().ReverseMap();

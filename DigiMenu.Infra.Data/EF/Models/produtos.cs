@@ -10,6 +10,8 @@ public partial class produtos : BaseEntity
 
     public string descricao { get; set; } = null!;
 
+    public int estabelecimento { get; set; }
+
     public decimal preco { get; set; }
 
     public bool ativo { get; set; }
@@ -18,5 +20,7 @@ public partial class produtos : BaseEntity
 
     public virtual tipoProduto TipoNavigation { get; set; } = null!;
 
-    public virtual ICollection<produtos_estabelecimento> produtos_estabelecimento { get; set; } = new List<produtos_estabelecimento>();
+    public virtual estabelecimento estabelecimentoNavigation { get; set; } = null!;
+
+    public virtual ICollection<pedido_itens> pedido_itens { get; set; } = new List<pedido_itens>();
 }

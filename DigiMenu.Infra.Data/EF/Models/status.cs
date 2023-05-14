@@ -10,8 +10,6 @@ public partial class status : BaseEntity
 
     public string descricao { get; set; } = null!;
 
-    public virtual ICollection<mesa_estabelecimento> mesa_estabelecimento { get; set; } = new List<mesa_estabelecimento>();
-
     public virtual ICollection<pedido_itens> pedido_itens { get; set; } = new List<pedido_itens>();
 
     public virtual ICollection<pedidos> pedidos { get; set; } = new List<pedidos>();

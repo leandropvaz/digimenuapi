@@ -16,8 +16,6 @@ namespace DigiMenu.Tests
         private IRepository<estabelecimento> _baseRepository;
         private IRepository<mesa> _mesaRepository;
         private IRepository<produtos> _produtoRepository;
-        private IRepository<produtos_estabelecimento> _produtoEstabelecimentoRepository;
-        private IRepository<mesa_estabelecimento> _mesaEstabelecimentoRepository;
         private IRepository<comanda> _comandaRepository;
         private IPedidoService _pedidoService;
         public DigiMenuTests()
@@ -28,11 +26,11 @@ namespace DigiMenu.Tests
 
             _baseRepository = services.BuildServiceProvider().GetRequiredService<IRepository<estabelecimento>>();
             _mesaRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa>>();
-            _mesaEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<mesa_estabelecimento>>();
+          
             _comandaRepository = services.BuildServiceProvider().GetRequiredService<IRepository<comanda>>();
             
             _produtoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos>>();
-            _produtoEstabelecimentoRepository = services.BuildServiceProvider().GetRequiredService<IRepository<produtos_estabelecimento>>();
+            
 
             _pedidoService = services.BuildServiceProvider().GetRequiredService<IPedidoService>();
         }
@@ -67,28 +65,14 @@ namespace DigiMenu.Tests
                 {
                     numero = i.ToString(),
                     ativo = true,
+                    estabelecimento= 1
 
                 };
                 _mesaRepository.Add(mesa);
             }
         }
 
-        [Fact]
-        public void InsertMesaEstabelecimento()
-        {
-
-                mesa_estabelecimento mesa = new()
-                {
-                  
-                    mesa = 1,
-                    estabelecimento =1,
-                    status =1,
-                    ativo = true,
-
-                };
-                _mesaEstabelecimentoRepository.Add(mesa);
-
-        }
+      
 
         [Fact]
         public void InsertComanda()
@@ -96,7 +80,7 @@ namespace DigiMenu.Tests
             comanda comanda = new()
             {
 
-                mesa_estabelecimento = 1,
+                mesa = 1,
                 anfitriao = "Alexandre",
                 status = 1,
             };
@@ -123,27 +107,17 @@ namespace DigiMenu.Tests
             {
                 
                 ativo = true,
-                descricao = "Heineken 600 ML ",
-                preco = (decimal)16,
+                descricao = "Coca Cola 350 ML ",
+                preco = (decimal)5,
                 Tipo = 1,
+                estabelecimento = 1
 
             };
             _produtoRepository.Add(produto);
 
         }
 
-        [Fact]
-        public void InsertProdutosEstabelecimento()
-        {
-            produtos_estabelecimento produto = new()
-            {
-                
-                ativo = true,
-                estabelecimento = 1,
-                produto = 4,
-            };
-            _produtoEstabelecimentoRepository.Add(produto);
-        }
+
 
         [Fact]
         public void InserePedido()

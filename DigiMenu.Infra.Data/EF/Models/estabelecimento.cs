@@ -20,7 +20,7 @@ public partial class estabelecimento : BaseEntity
 
     public string email { get; set; } = null!;
 
-    public virtual ICollection<mesa_estabelecimento> mesa_estabelecimento { get; set; } = new List<mesa_estabelecimento>();
+    public virtual ICollection<mesa> mesa { get; set; } = new List<mesa>();
 
-    public virtual ICollection<produtos_estabelecimento> produtos_estabelecimento { get; set; } = new List<produtos_estabelecimento>();
+    public virtual ICollection<produtos> produtos { get; set; } = new List<produtos>();
 }

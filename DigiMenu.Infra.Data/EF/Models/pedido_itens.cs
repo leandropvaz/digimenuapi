@@ -18,7 +18,7 @@ public partial class pedido_itens : BaseEntity
 
     public virtual pedidos pedidoNavigation { get; set; } = null!;
 
-    public virtual produtos_estabelecimento produtoNavigation { get; set; } = null!;
+    public virtual produtos produtoNavigation { get; set; } = null!;
 
     public virtual status statusNavigation { get; set; } = null!;
 }
