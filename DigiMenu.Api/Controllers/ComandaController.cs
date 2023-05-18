@@ -1,5 +1,6 @@
 using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,7 +29,7 @@ namespace DigiMenu.Api.Controllers
         }
         [HttpPost]
         [Route("AbrirComanda")]
-        public IActionResult AbrirComanda([FromBody] ComandaModel comanda)
+        public IActionResult AbrirComanda([FromBody] AbrirComandaRequest comanda)
         {
             return Execute(() => _comandaService.AbrirComanda(comanda));
         }

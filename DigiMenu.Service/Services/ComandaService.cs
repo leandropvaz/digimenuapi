@@ -3,6 +3,7 @@ using DigiMenu.Domain.Models;
 using AutoMapper;
 using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
+using DigiMenu.Domain.Models.Request;
 
 namespace DigiMenu.Service.Services
 {
@@ -17,7 +18,7 @@ namespace DigiMenu.Service.Services
             _comandaRepository = comandaRepository;
         }
 
-        public int AbrirComanda(ComandaModel objcomanda)
+        public int AbrirComanda(AbrirComandaRequest objcomanda)
         {
             comanda entityComanda = _mapper.Map<comanda>(objcomanda);
             entityComanda.status = 1;

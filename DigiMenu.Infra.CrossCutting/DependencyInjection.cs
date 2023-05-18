@@ -47,6 +47,7 @@ namespace DigiMenu.Infra.CrossCutting
             {
                 config.CreateMap<estabelecimento, EstabelecimentoModel>().ReverseMap();
                 config.CreateMap<comanda, ComandaModel>().ReverseMap();
+                config.CreateMap<comanda, AbrirComandaRequest>().ReverseMap();
 
                 config.CreateMap<produtos, ProdutoModel>().ReverseMap();
                 config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
