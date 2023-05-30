@@ -24,7 +24,8 @@ namespace DigiMenu.Infra.Data.Repository
             var result = await base._context.pedidos
               .Include(x => x.pedido_itens)
               .Where(x => x.comanda == comanda).ToListAsync();
-              
+
+
 
             return result;
 

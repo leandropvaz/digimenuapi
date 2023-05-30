@@ -8,6 +8,10 @@
 
         public string? anfitriao { get; set; }
 
+        public string? valor { get; set; }
+
+        public string? valorCredito { get; set; }
+
         public int status { get; set; }
 
         public DateTime dataAbertura { get; set; }

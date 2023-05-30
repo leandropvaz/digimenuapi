@@ -5,6 +5,7 @@ using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
 using DigiMenu.Domain.Models.Request;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace DigiMenu.Service.Services
 {
@@ -30,6 +31,11 @@ namespace DigiMenu.Service.Services
         {
             var entity = _pedidoRepository.GetPedidoByComanda(comanda).GetAwaiter().GetResult();
             var outputModel = _mapper.Map<IEnumerable<PedidoModel>>(entity);
+
+            foreach (var pedido in outputModel)
+            {
+                pedido.dataPedidoFeito = Convert.ToDateTime(pedido.dataPedidoFeito).ToString("dd/MM/yyyy HH:mm:ss", new CultureInfo("pt-BR")); // Formatação da data
+            }
             return outputModel;
         }
     }

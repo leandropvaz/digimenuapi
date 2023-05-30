@@ -14,13 +14,13 @@ namespace DigiMenu.Domain.Models
 
         public int status { get; set; }
 
-        public DateTime dataPedidoFeito { get; set; }
+        public string? dataPedidoFeito { get; set; }
 
         public string? responsavel { get; set; }
 
         public string? observacao { get; set; }
 
-        public DateTime? dataPedidoEntregue { get; set; }
+        public string? dataPedidoEntregue { get; set; }
 
         public virtual ICollection<Pedido_Itens_Model> pedido_itens { get; set; } = new List<Pedido_Itens_Model>();
 

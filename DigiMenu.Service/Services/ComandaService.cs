@@ -39,6 +39,9 @@ namespace DigiMenu.Service.Services
         {
             var entity = _comandaRepository.GetById(id, p => p.pedidos);
             var outputModel = _mapper.Map<ComandaModel>(entity);
+            outputModel.valor = _comandaRepository.ValorComanda(id);
+            outputModel.valorCredito = _comandaRepository.ValorCreditoComanda(id);
+
             return outputModel;
         }
     }
