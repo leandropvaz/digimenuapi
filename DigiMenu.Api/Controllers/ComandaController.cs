@@ -33,6 +33,13 @@ namespace DigiMenu.Api.Controllers
         {
             return Execute(() => _comandaService.ValorComanda(idComanda));
         }
+
+        [HttpGet]
+        [Route("ValorCreditoComanda")]
+        public IActionResult ValorCreditoComanda(int idComanda)
+        {
+            return Execute(() => _comandaService.ValorCreditoComanda(idComanda));
+        }
         [HttpPost]
         [Route("AbrirComanda")]
         public IActionResult AbrirComanda([FromBody] AbrirComandaRequest comanda)
