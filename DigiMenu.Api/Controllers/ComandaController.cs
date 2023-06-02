@@ -28,6 +28,12 @@ namespace DigiMenu.Api.Controllers
             return Execute(() => _comandaService.GetComanda(id));
         }
         [HttpGet]
+        [Route("GetStatusComanda")]
+        public IActionResult GetStatusComanda(int id)
+        {
+            return Execute(() => _comandaService.GetStatusComanda(id));
+        }
+        [HttpGet]
         [Route("ValorComanda")]
         public IActionResult ValorComanda(int idComanda)
         {

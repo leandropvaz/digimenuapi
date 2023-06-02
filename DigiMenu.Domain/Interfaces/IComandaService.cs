@@ -10,5 +10,6 @@ namespace DigiMenu.Domain.Interfaces
         decimal ValorComanda(int comanda);
         decimal ValorCreditoComanda(int comanda);
         int FecharComanda(int id);
+        int GetStatusComanda(int id);
     }
 }

@@ -43,6 +43,11 @@ namespace DigiMenu.Service.Services
 
             return outputModel;
         }
+        public int GetStatusComanda(int id)
+        {
+            comanda entity = _comandaRepository.GetById(id);
+             return entity.status;
+        }
         public decimal ValorComanda(int comanda)
         {
             return Convert.ToDecimal(_comandaRepository.ValorComanda(comanda));
