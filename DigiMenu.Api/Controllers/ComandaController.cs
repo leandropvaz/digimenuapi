@@ -47,8 +47,10 @@ namespace DigiMenu.Api.Controllers
             return Execute(() => _comandaService.AbrirComanda(comanda));
         }
 
-        [HttpPut]
+
+        [HttpPost]
         [Route("FecharComanda")]
+
         public IActionResult FecharComanda(int idComanda)
         {
             
