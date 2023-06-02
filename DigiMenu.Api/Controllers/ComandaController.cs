@@ -51,8 +51,8 @@ namespace DigiMenu.Api.Controllers
         [Route("FecharComanda")]
         public IActionResult FecharComanda(int idComanda)
         {
-            return Ok();
-            //return Execute(() => _comandaService.FecharComanda(idComanda));
+            
+            return Execute(() => _comandaService.FecharComanda(idComanda));
         }
 
 

@@ -9,10 +9,6 @@ namespace DigiMenu.Domain.Interfaces
         int AbrirComanda(AbrirComandaRequest inputModel);
         decimal ValorComanda(int comanda);
         decimal ValorCreditoComanda(int comanda);
-
-
-        //ComandaModel FecharComanda(int id);
-        //ComandaModel IncluirItemComanda(List<Comanda_Itens_Model> comandaItens);
-
+        bool FecharComanda(int id);
     }
 }
