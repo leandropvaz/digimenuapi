@@ -26,12 +26,12 @@ namespace DigiMenu.Service.Services
             return entityComanda.id;
         }
 
-        public bool FecharComanda(int id)
+        public int FecharComanda(int id)
         {
             comanda entity = _comandaRepository.GetById(id);
             entity.status = 2;
             _comandaRepository.Update(entity);
-            return true;
+            return 1;
         }
 
         public ComandaModel GetComanda(int id)
