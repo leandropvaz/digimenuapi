@@ -44,5 +44,13 @@ namespace DigiMenu.Service.Services
 
             return outputModel;
         }
+        public decimal ValorComanda(int comanda)
+        {
+            return Convert.ToDecimal(_comandaRepository.ValorComanda(comanda));
+        }
+        public decimal ValorCreditoComanda(int comanda)
+        {
+            return Convert.ToDecimal(_comandaRepository.ValorCreditoComanda(comanda));
+        }
     }
 }

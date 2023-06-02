@@ -25,8 +25,6 @@ namespace DigiMenu.Infra.Data.Repository
               .Include(x => x.pedido_itens)
               .Where(x => x.comanda == comanda).ToListAsync();
 
-
-
             return result;
 
         }
