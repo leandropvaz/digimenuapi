@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.CrossCutting\\DigiMenu.Infra.CrossCutting.csproj": {}
+    "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.CrossCutting/DigiMenu.Infra.CrossCutting.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
+    "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
+        "projectUniqueName": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj",
         "projectName": "DigiMenu.Domain",
-        "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj",
-        "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\obj\\",
+        "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj",
+        "packagesPath": "/Users/leandrovaz/.nuget/packages/",
+        "outputPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/leandrovaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +42,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -61,42 +64,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.CrossCutting\\DigiMenu.Infra.CrossCutting.csproj": {
+    "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.CrossCutting/DigiMenu.Infra.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.CrossCutting\\DigiMenu.Infra.CrossCutting.csproj",
+        "projectUniqueName": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.CrossCutting/DigiMenu.Infra.CrossCutting.csproj",
         "projectName": "DigiMenu.Infra.CrossCutting",
-        "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.CrossCutting\\DigiMenu.Infra.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.CrossCutting\\obj\\",
+        "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.CrossCutting/DigiMenu.Infra.CrossCutting.csproj",
+        "packagesPath": "/Users/leandrovaz/.nuget/packages/",
+        "outputPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.CrossCutting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/leandrovaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj"
               },
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj"
               },
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/DigiMenu.Service.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/DigiMenu.Service.csproj"
               }
             }
           }
@@ -132,36 +134,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj": {
+    "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj",
+        "projectUniqueName": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj",
         "projectName": "DigiMenu.Infra.Data",
-        "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\obj\\",
+        "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj",
+        "packagesPath": "/Users/leandrovaz/.nuget/packages/",
+        "outputPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/leandrovaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj"
               }
             }
           }
@@ -217,39 +218,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj": {
+    "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/DigiMenu.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj",
+        "projectUniqueName": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/DigiMenu.Service.csproj",
         "projectName": "DigiMenu.Service",
-        "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\DigiMenu.Service.csproj",
-        "packagesPath": "C:\\Users\\nb29554\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Service\\obj\\",
+        "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/DigiMenu.Service.csproj",
+        "packagesPath": "/Users/leandrovaz/.nuget/packages/",
+        "outputPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nb29554\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/leandrovaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Domain\\DigiMenu.Domain.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/DigiMenu.Domain.csproj"
               },
-              "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj": {
-                "projectPath": "D:\\OneDrive - Novabase\\Documents\\Projetos\\digimenuapi\\DigiMenu.Infra.Data\\DigiMenu.Infra.Data.csproj"
+              "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj": {
+                "projectPath": "/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Infra.Data/DigiMenu.Infra.Data.csproj"
               }
             }
           }
@@ -279,7 +279,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

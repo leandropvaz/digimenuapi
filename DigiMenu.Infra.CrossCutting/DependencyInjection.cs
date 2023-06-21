@@ -40,6 +40,9 @@ namespace DigiMenu.Infra.CrossCutting
             services.AddScoped<IPedidoService, PedidoService>();
             services.AddScoped<PedidoRepository>();
 
+            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<UsuarioRepository>();
+
 
             //services.AddScoped<ILoginService, LoginService>();
 
@@ -48,6 +51,9 @@ namespace DigiMenu.Infra.CrossCutting
                 config.CreateMap<estabelecimento, EstabelecimentoModel>().ReverseMap();
                 config.CreateMap<comanda, ComandaModel>().ReverseMap();
                 config.CreateMap<comanda, AbrirComandaRequest>().ReverseMap();
+
+                config.CreateMap<usuario, UsuarioModel>().ReverseMap();
+                config.CreateMap<usuario, CadastrarUsuarioRequest>().ReverseMap();
 
                 config.CreateMap<produtos, ProdutoModel>().ReverseMap();
                 config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();

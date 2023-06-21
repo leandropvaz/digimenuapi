@@ -5,7 +5,7 @@ namespace DigiMenu.Domain.Interfaces
 {
     public interface IComandaService
     {
-        ComandaModel GetComanda(int id);
+        Result<ComandaModel> GetComanda(int id);
         int AbrirComanda(AbrirComandaRequest inputModel);
         decimal ValorComanda(int comanda);
         decimal ValorCreditoComanda(int comanda);

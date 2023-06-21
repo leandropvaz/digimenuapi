@@ -1,46 +1,63 @@
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.deps.json
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.dll
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.pdb
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.AssemblyReference.cache
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfoInputs.cache
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfo.cs
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CoreCompileInputs.cache
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.dll
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\refint\DigiMenu.Service.dll
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.pdb
-C:\Users\User01\source\repos\DigiMenu.Api\DigiMenu.Service\obj\Debug\net7.0\ref\DigiMenu.Service.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.deps.json
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.pdb
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.pdb
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.AssemblyReference.cache
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfoInputs.cache
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfo.cs
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CoreCompileInputs.cache
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CopyComplete
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\refint\DigiMenu.Service.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.pdb
-C:\temp\projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\ref\DigiMenu.Service.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
-C:\temp\projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.deps.json
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.dll
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.pdb
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.dll
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.pdb
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.AssemblyReference.cache
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfoInputs.cache
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfo.cs
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CoreCompileInputs.cache
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CopyComplete
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.dll
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\refint\DigiMenu.Service.dll
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.pdb
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\ref\DigiMenu.Service.dll
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.deps.json
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.dll
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.pdb
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.AssemblyReference.cache
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfoInputs.cache
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfo.cs
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CoreCompileInputs.cache
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.dll
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/refint/DigiMenu.Service.dll
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.pdb
+C:/Users/User01/source/repos/DigiMenu.Api/DigiMenu.Service/obj/Debug/net7.0/ref/DigiMenu.Service.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.deps.json
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.pdb
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.pdb
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.AssemblyReference.cache
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfoInputs.cache
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfo.cs
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CoreCompileInputs.cache
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CopyComplete
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/refint/DigiMenu.Service.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.pdb
+C:/temp/projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/ref/DigiMenu.Service.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.dll
+C:/temp/projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.pdb
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.deps.json
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.dll
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.pdb
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.dll
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.dll
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.pdb
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.pdb
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.AssemblyReference.cache
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfoInputs.cache
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfo.cs
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CoreCompileInputs.cache
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CopyComplete
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.dll
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/refint/DigiMenu.Service.dll
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.pdb
+D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/ref/DigiMenu.Service.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.deps.json
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Service.pdb
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Domain.pdb
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/bin/Debug/net7.0/DigiMenu.Infra.Data.pdb
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.AssemblyReference.cache
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfoInputs.cache
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.AssemblyInfo.cs
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CoreCompileInputs.cache
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.csproj.CopyComplete
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/refint/DigiMenu.Service.dll
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.pdb
+/Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/ref/DigiMenu.Service.dll
