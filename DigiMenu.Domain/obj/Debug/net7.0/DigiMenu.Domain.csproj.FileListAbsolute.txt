@@ -49,3 +49,15 @@ D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Domain/obj/Debug/
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/obj/Debug/net7.0/refint/DigiMenu.Domain.dll
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/obj/Debug/net7.0/DigiMenu.Domain.pdb
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Domain/obj/Debug/net7.0/ref/DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.deps.json
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\bin\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.AssemblyReference.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfoInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.AssemblyInfo.cs
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.csproj.CoreCompileInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\refint\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Domain\obj\Debug\net7.0\ref\DigiMenu.Domain.dll

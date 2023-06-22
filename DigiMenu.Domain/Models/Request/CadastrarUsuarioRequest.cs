@@ -12,6 +12,7 @@ namespace DigiMenu.Domain.Models.Request
         public string? telefone { get; set; }
         public string? cpf { get; set; }
         public string? email { get; set; }
+        public string? senha { get; set; } = null!;
 
     }
 }

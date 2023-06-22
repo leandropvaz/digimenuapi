@@ -36,6 +36,8 @@ public partial class DigiMenuContext : DbContext
 
     public virtual DbSet<tipoProduto> tipoProduto { get; set; }
 
+    public virtual DbSet<usuario> usuario { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=coretech.database.windows.net;Database=digimenu;User ID=coretech;Password=Babi2505;");
@@ -186,6 +188,34 @@ public partial class DigiMenuContext : DbContext
 
             entity.Property(e => e.descricao)
                 .HasMaxLength(250)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<usuario>(entity =>
+        {
+            entity.Property(e => e.ativo)
+                .IsRequired()
+                .HasDefaultValueSql("((1))");
+            entity.Property(e => e.cpf)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.dataCadastro)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.email)
+                .HasMaxLength(250)
+                .IsUnicode(false);
+            entity.Property(e => e.imagem)
+                .HasMaxLength(250)
+                .IsUnicode(false);
+            entity.Property(e => e.nome)
+                .HasMaxLength(250)
+                .IsUnicode(false);
+            entity.Property(e => e.senha)
+                .HasMaxLength(8)
+                .IsUnicode(false);
+            entity.Property(e => e.telefone)
+                .HasMaxLength(20)
                 .IsUnicode(false);
         });
 

@@ -61,3 +61,20 @@ D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Service/obj/Debug
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/refint/DigiMenu.Service.dll
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/DigiMenu.Service.pdb
 /Users/leandrovaz/Projetos/digimenuapi/DigiMenu.Service/obj/Debug/net7.0/ref/DigiMenu.Service.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.deps.json
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Service.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Domain.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\bin\Debug\net7.0\DigiMenu.Infra.Data.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.AssemblyReference.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfoInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.AssemblyInfo.cs
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CoreCompileInputs.cache
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.csproj.CopyComplete
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\refint\DigiMenu.Service.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\DigiMenu.Service.pdb
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Service\obj\Debug\net7.0\ref\DigiMenu.Service.dll
