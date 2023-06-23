@@ -35,9 +35,16 @@ namespace DigiMenu.Api.Controllers
 
         [HttpPost]
         [Route("CadastrarUsuario")]
-        public IActionResult AbrirComanda([FromBody] CadastrarUsuarioRequest comanda)
+        public IActionResult CadastrarUsuario([FromBody] CadastrarUsuarioRequest comanda)
         {
             return Execute(() => _usuarioService.CadastrarUsuario(comanda));
+        }
+
+        [HttpPost]
+        [Route("Login")]
+        public IActionResult LoginUsuario([FromBody] LoginRequest comanda)
+        {
+            return Execute(() => _usuarioService.LoginUsuario(comanda));
         }
 
         private IActionResult Execute(Func<object> func)

@@ -26,8 +26,11 @@ namespace DigiMenu.Service.Services
             var outputModel = _mapper.Map<UsuarioModel>(entity);
             return Result.Ok(outputModel);
         }
-
         public Result<UsuarioModel> GetUsuario(int id)
+        {
+            throw new NotImplementedException();
+        }
+        public Result<UsuarioModel> LoginUsuario(LoginRequest inputModel)
         {
             throw new NotImplementedException();
         }

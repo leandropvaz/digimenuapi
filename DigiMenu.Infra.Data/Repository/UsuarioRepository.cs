@@ -14,5 +14,14 @@ namespace DigiMenu.Infra.Data.Repository
         public UsuarioRepository(DigiMenuContext context) : base(context)
         {
         }
+
+        public async Task<IEnumerable<usuario>> Login(string cpf, string senha)
+        {
+            var resultado = (from usuario in _context.usuario
+                            where usuario.cpf == cpf && usuario.senha == senha
+                            select usuario).ToListAsync().Result;
+
+            return resultado;
+        }
     }
 }
