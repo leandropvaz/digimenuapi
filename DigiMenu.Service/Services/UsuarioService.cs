@@ -30,10 +30,10 @@ namespace DigiMenu.Service.Services
         {
             throw new NotImplementedException();
         }
-        public UsuarioModel LoginUsuario(LoginRequest user)
+        public IEnumerable<UsuarioModel> LoginUsuario(LoginRequest user)
         {
             var entity = _usuarioRepository.Login(user.cpf, user.senha);
-            var outputModel = _mapper.Map<UsuarioModel>(entity);
+            var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
             return outputModel;
         }
     }

@@ -7,7 +7,7 @@ namespace DigiMenu.Domain.Interfaces
     {
         Result<UsuarioModel> GetUsuario(int id);
         Result<UsuarioModel> CadastrarUsuario(CadastrarUsuarioRequest inputModel);
-        UsuarioModel LoginUsuario(LoginRequest inputModel);
+        IEnumerable<UsuarioModel> LoginUsuario(LoginRequest inputModel);
 
     }
 }
