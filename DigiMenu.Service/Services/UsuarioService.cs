@@ -32,7 +32,7 @@ namespace DigiMenu.Service.Services
         }
         public IEnumerable<UsuarioModel> LoginUsuario(LoginRequest user)
         {
-            var entity = _usuarioRepository.Login(user.cpf, user.senha);
+            var entity = _usuarioRepository.Login(user.cpf, user.senha).GetAwaiter().GetResult(); 
             var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
             return outputModel;
         }
