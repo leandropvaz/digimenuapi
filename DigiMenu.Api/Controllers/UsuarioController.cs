@@ -44,7 +44,7 @@ namespace DigiMenu.Api.Controllers
         [Route("Login")]
         public IActionResult LoginUsuario([FromBody] LoginRequest usuario)
         {
-            return Execute(() => _usuarioService.LoginUsuario(usuario));
+            return Execute(() => _usuarioService.LoginSistema(usuario));
         }
 
         [HttpPost]

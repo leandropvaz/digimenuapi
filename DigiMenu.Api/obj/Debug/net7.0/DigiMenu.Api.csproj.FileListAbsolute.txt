@@ -191,7 +191,6 @@ D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/DigiMenu.Api.AssemblyInfoInputs.cache
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/DigiMenu.Api.AssemblyInfo.cs
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/DigiMenu.Api.csproj.CoreCompileInputs.cache
-D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/DigiMenu.Api.MvcApplicationPartsAssemblyInfo.cs
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/DigiMenu.Api.MvcApplicationPartsAssemblyInfo.cache
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/staticwebassets/msbuild.DigiMenu.Api.Microsoft.AspNetCore.StaticWebAssets.props
 D:/OneDrive - Novabase/Documents/Projetos/digimenuapi/DigiMenu.Api/obj/Debug/net7.0/staticwebassets/msbuild.build.DigiMenu.Api.props
@@ -363,7 +362,6 @@ D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.AssemblyInfoInputs.cache
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.AssemblyInfo.cs
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.csproj.CoreCompileInputs.cache
-D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\staticwebassets\msbuild.DigiMenu.Api.Microsoft.AspNetCore.StaticWebAssets.props
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.DigiMenu.Api.props

@@ -5,6 +5,7 @@ using DigiMenu.Infra.Data.EF.Models;
 using DigiMenu.Infra.Data.Repository;
 using DigiMenu.Domain.Models.Request;
 using DigiMenu.Domain;
+using System.Collections.Generic;
 
 namespace DigiMenu.Service.Services
 {
@@ -19,12 +20,21 @@ namespace DigiMenu.Service.Services
             _usuarioRepository = usuarioRepository;
         }
 
-        public Result<UsuarioModel> CadastrarUsuario(CadastrarUsuarioRequest usuarioRequest)
+        public Result<IEnumerable<UsuarioModel>> CadastrarUsuario(CadastrarUsuarioRequest usuarioRequest)
         {
-            usuario entity = _mapper.Map<usuario>(usuarioRequest);
-            _usuarioRepository.Add(entity);
-            var outputModel = _mapper.Map<UsuarioModel>(entity);
-            return Result.Ok(outputModel);
+            if (!_usuarioRepository.GetUsuarioByCPF(usuarioRequest.cpf).GetAwaiter().GetResult().Any())
+            {
+                usuario entity = _mapper.Map<usuario>(usuarioRequest);
+                _usuarioRepository.Add(entity);
+                var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
+                return Result.Ok(outputModel);
+            }
+            else
+            {
+                IEnumerable<UsuarioModel> result = new List<UsuarioModel>(); 
+                return Result.Fail<IEnumerable<UsuarioModel>>("Usuário já cadastrado!");
+            }
+
         }
         public Result<UsuarioModel> GetUsuario(int id)
         {
@@ -32,16 +42,16 @@ namespace DigiMenu.Service.Services
         }
 
 
-        public IEnumerable<UsuarioModel> LoginUsuario(LoginRequest user)
+        public IEnumerable<UsuarioModel> LoginSistema(LoginRequest user)
         {
-            var entity = _usuarioRepository.Login(user.cpf, user.senha).GetAwaiter().GetResult();
+            var entity = _usuarioRepository.LoginSistema(user.cpf, user.senha).GetAwaiter().GetResult();
             var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
             return outputModel;
         }
 
         public IEnumerable<UsuarioModel> LoginGoogle(LoginRequestGoogle user)
         {
-            var entity = _usuarioRepository.Login(user.email, user.senha).GetAwaiter().GetResult();
+            var entity = _usuarioRepository.LoginGoogle(user.email).GetAwaiter().GetResult();
             var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
             return outputModel;
         }

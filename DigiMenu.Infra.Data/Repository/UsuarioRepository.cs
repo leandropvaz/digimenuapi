@@ -15,7 +15,7 @@ namespace DigiMenu.Infra.Data.Repository
         {
         }
 
-        public async Task<IEnumerable<usuario>> Login(string cpf, string senha)
+        public async Task<IEnumerable<usuario>> LoginSistema(string cpf, string senha)
         {
             var resultado = await (from usuario in _context.usuario
                                    where usuario.cpf == cpf && usuario.senha == senha
@@ -23,6 +23,25 @@ namespace DigiMenu.Infra.Data.Repository
 
             return resultado;
         }
+
+        public async Task<IEnumerable<usuario>> LoginGoogle(string email)
+        {
+            var resultado = await (from usuario in _context.usuario
+                                   where usuario.email == email
+                                   select usuario).ToListAsync();
+
+            return resultado;
+        }
+
+        public async Task<IEnumerable<usuario>> GetUsuarioByCPF(string cpf)
+        {
+            var resultado = await (from usuario in _context.usuario
+                                   where usuario.cpf == cpf
+                                   select usuario).ToListAsync();
+
+            return resultado;
+        }
+
 
     }
 }
