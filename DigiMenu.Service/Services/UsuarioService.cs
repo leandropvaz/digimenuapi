@@ -32,8 +32,8 @@ namespace DigiMenu.Service.Services
             }
             else
             {
-                IEnumerable<UsuarioModel> result = new List<UsuarioModel>();
-                return result;
+                
+                return null;
             }
 
         }
