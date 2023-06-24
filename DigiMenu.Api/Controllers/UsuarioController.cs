@@ -35,16 +35,23 @@ namespace DigiMenu.Api.Controllers
 
         [HttpPost]
         [Route("CadastrarUsuario")]
-        public IActionResult CadastrarUsuario([FromBody] CadastrarUsuarioRequest comanda)
+        public IActionResult CadastrarUsuario([FromBody] CadastrarUsuarioRequest usuario)
         {
-            return Execute(() => _usuarioService.CadastrarUsuario(comanda));
+            return Execute(() => _usuarioService.CadastrarUsuario(usuario));
         }
 
         [HttpPost]
         [Route("Login")]
-        public IActionResult LoginUsuario([FromBody] LoginRequest comanda)
+        public IActionResult LoginUsuario([FromBody] LoginRequest usuario)
         {
-            return Execute(() => _usuarioService.LoginUsuario(comanda));
+            return Execute(() => _usuarioService.LoginUsuario(usuario));
+        }
+
+        [HttpPost]
+        [Route("LoginGoogle")]
+        public IActionResult LoginGoogle([FromBody] LoginRequestGoogle usuario)
+        {
+            return Execute(() => _usuarioService.LoginGoogle(usuario));
         }
 
         private IActionResult Execute(Func<object> func)

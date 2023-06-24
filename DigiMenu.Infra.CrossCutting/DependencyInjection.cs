@@ -54,6 +54,7 @@ namespace DigiMenu.Infra.CrossCutting
 
                 config.CreateMap<usuario, UsuarioModel>().ReverseMap();
                 config.CreateMap<usuario, CadastrarUsuarioRequest>().ReverseMap();
+                
 
                 config.CreateMap<produtos, ProdutoModel>().ReverseMap();
                 config.CreateMap<tipoProduto, TipoProdutoModel>().ReverseMap();
@@ -63,7 +64,10 @@ namespace DigiMenu.Infra.CrossCutting
                 config.CreateMap<pedido_itens, PedidoItensRequest>().ReverseMap();
 
                 //config.CreateMap<produtos_estabelecimento, Produto_Estabelecimento_Model>().ReverseMap();
-            }).CreateMapper());
+            })
+            {
+
+            }.CreateMapper());
         }
     }
 }

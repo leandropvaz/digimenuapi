@@ -30,9 +30,18 @@ namespace DigiMenu.Service.Services
         {
             throw new NotImplementedException();
         }
+
+
         public IEnumerable<UsuarioModel> LoginUsuario(LoginRequest user)
         {
-            var entity = _usuarioRepository.Login(user.cpf, user.senha).GetAwaiter().GetResult(); 
+            var entity = _usuarioRepository.Login(user.cpf, user.senha).GetAwaiter().GetResult();
+            var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
+            return outputModel;
+        }
+
+        public IEnumerable<UsuarioModel> LoginGoogle(LoginRequestGoogle user)
+        {
+            var entity = _usuarioRepository.Login(user.email, user.senha).GetAwaiter().GetResult();
             var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
             return outputModel;
         }

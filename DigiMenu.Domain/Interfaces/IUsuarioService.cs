@@ -8,6 +8,9 @@ namespace DigiMenu.Domain.Interfaces
         Result<UsuarioModel> GetUsuario(int id);
         Result<UsuarioModel> CadastrarUsuario(CadastrarUsuarioRequest inputModel);
         IEnumerable<UsuarioModel> LoginUsuario(LoginRequest inputModel);
+        IEnumerable<UsuarioModel> LoginGoogle(LoginRequestGoogle inputModel);
+
+        
 
     }
 }
