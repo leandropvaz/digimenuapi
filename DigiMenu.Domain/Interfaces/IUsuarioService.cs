@@ -6,7 +6,7 @@ namespace DigiMenu.Domain.Interfaces
     public interface IUsuarioService
     {
         Result<UsuarioModel> GetUsuario(int id);
-        IEnumerable<UsuarioModel> CadastrarUsuario(CadastrarUsuarioRequest inputModel);
+       UsuarioModel CadastrarUsuario(CadastrarUsuarioRequest inputModel);
         IEnumerable<UsuarioModel> LoginSistema(LoginRequest inputModel);
         IEnumerable<UsuarioModel> LoginGoogle(LoginRequestGoogle inputModel);
 

@@ -20,18 +20,18 @@ namespace DigiMenu.Service.Services
             _usuarioRepository = usuarioRepository;
         }
 
-        public IEnumerable<UsuarioModel> CadastrarUsuario(CadastrarUsuarioRequest usuarioRequest)
+        public UsuarioModel CadastrarUsuario(CadastrarUsuarioRequest usuarioRequest)
         {
             if (!_usuarioRepository.GetUsuarioByCPF(usuarioRequest.cpf).GetAwaiter().GetResult().Any())
             {
                 usuario entity = _mapper.Map<usuario>(usuarioRequest);
                 _usuarioRepository.Add(entity);
-                var outputModel = _mapper.Map<IEnumerable<UsuarioModel>>(entity);
+                var outputModel = _mapper.Map<UsuarioModel>(entity);
                 return outputModel;
             }
             else
             {
-                IEnumerable<UsuarioModel> result = new List<UsuarioModel>();
+                UsuarioModel result = new UsuarioModel();
                 return result;
             }
 
