@@ -1,4 +1,5 @@
-﻿using DigiMenu.Infra.Data.EF;
+﻿using DigiMenu.Domain.Models.Response;
+using DigiMenu.Infra.Data.EF;
 using DigiMenu.Infra.Data.EF.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -28,6 +29,41 @@ namespace DigiMenu.Infra.Data.Repository
 
             return result;
 
+        }
+
+        public async Task<IEnumerable<PreviewComanda>> GetPreviewComanda(int comanda)
+        {
+            try
+            {
+                var resultado = (from pi in _context.pedido_itens
+                                 join p in _context.pedidos on pi.pedido equals p.id
+                                 join pr in _context.produtos on pi.produto equals pr.id
+                                 join c in _context.comanda on p.comanda equals c.id
+                                 where c.id == comanda
+                                 select new { pi, p, pr, c })
+                   .AsEnumerable()
+                   .GroupBy(
+                       x => new { x.pr.descricao, x.pr.preco },
+                       x => new { x.pi, x.pr })
+                   .OrderBy(g => g.Key.descricao)
+                   .Select((g, index) => new PreviewComanda
+                   {
+                       item = (index + 1).ToString(),
+                       descricao = g.Key.descricao,
+                       precoUnitario = g.Key.preco.ToString(),
+                       quantidade = g.Sum(x => x.pi.quantidade).ToString(),
+                       precoTotal = g.Sum(x => x.pr.preco).ToString()
+                   })
+                   .ToList();
+
+
+
+                return resultado;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
 

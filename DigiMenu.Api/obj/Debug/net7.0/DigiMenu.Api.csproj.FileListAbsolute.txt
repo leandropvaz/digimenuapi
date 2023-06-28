@@ -377,3 +377,4 @@ D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.pdb
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.genruntimeconfig.cache
 D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\ref\DigiMenu.Api.dll
+D:\OneDrive - Novabase\Documents\Projetos\digimenuapi\DigiMenu.Api\obj\Debug\net7.0\DigiMenu.Api.MvcApplicationPartsAssemblyInfo.cs

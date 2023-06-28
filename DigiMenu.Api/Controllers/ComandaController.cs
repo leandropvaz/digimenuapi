@@ -59,8 +59,15 @@ namespace DigiMenu.Api.Controllers
 
         public IActionResult FecharComanda(int idComanda)
         {
-            
+
             return Execute(() => _comandaService.FecharComanda(idComanda));
+        }
+
+        [HttpGet]
+        [Route("GetPreviewComanda")]
+        public IActionResult GetPreviewComanda(int idComanda)
+        {
+            return Execute(() => _comandaService.GetPreviewComanda(idComanda));
         }
 
 
