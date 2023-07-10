@@ -1,7 +1,10 @@
 using DigiMenu.Domain.Interfaces;
 using DigiMenu.Domain.Models;
+using DigiMenu.Domain.Models.Request;
 using DigiMenu.Infra.Data.EF.Models;
+using DigiMenu.Service.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DigiMenu.Api.Controllers
 {
@@ -46,6 +49,27 @@ namespace DigiMenu.Api.Controllers
         public IActionResult GetTipoProdutos()
         {
             return Execute(() => _produtoservice.GetTipoProdutos());
+        }
+
+        [HttpPost]
+        [Route("admin/CadastrarProduto")]
+        public IActionResult CadastrarProduto([FromBody] ProdutoModel produto)
+        {
+            return Execute(() => _produtoservice.CadastrarProduto(produto));
+        }
+
+        [HttpDelete]
+        [Route("admin/DeletarProduto")]
+        public async Task<IActionResult> DeleteProduto(int id)
+        {
+            return Execute(() => _produtoservice.DeletarProduto(id));
+        }
+
+        [HttpPut]
+        [Route("admin/AlterarProduto")]
+        public async Task<IActionResult> AlterarProduto([FromBody] ProdutoModel produto)
+        {
+            return Execute(() => _produtoservice.AlterarProduto(produto));
         }
 
 

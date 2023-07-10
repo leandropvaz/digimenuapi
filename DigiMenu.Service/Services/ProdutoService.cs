@@ -45,5 +45,27 @@ namespace DigiMenu.Service.Services
             var outputModel = _mapper.Map<IEnumerable<TipoProdutoModel>>(entity);
             return outputModel;
         }
+
+        public ProdutoModel CadastrarProduto(ProdutoModel produto)
+        {
+            produtos entity = _mapper.Map<produtos>(produto);
+            _produtoRepository.Add(entity);
+            var outputModel = _mapper.Map<ProdutoModel>(entity);
+            return outputModel;
+        }
+        public bool DeletarProduto(int produto)
+        {
+           var entity = _produtoRepository.GetProdutoById(produto);
+            _produtoRepository.RemoveRange(entity.Result);
+            return true;
+
+        }
+        public bool AlterarProduto(ProdutoModel produto)
+        {
+            produtos entity = _mapper.Map<produtos>(produto);
+            _produtoRepository.Update(entity);
+            return true;
+
+        }
     }
 }

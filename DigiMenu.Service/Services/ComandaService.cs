@@ -35,7 +35,6 @@ namespace DigiMenu.Service.Services
             _comandaRepository.Update(entity);
             return 1;
         }
-
         public ComandaModel GetComanda(int id)
         {
             var entity = _comandaRepository.GetById(id, p => p.pedidos);
@@ -64,6 +63,13 @@ namespace DigiMenu.Service.Services
             var entity = _comandaRepository.GetPreviewComanda(id).GetAwaiter().GetResult();
             return entity;
             
+        }
+
+        public IEnumerable<ComandaModel> GetComandasbyEstabelecimentos(int idestabelecimento)
+        {
+            var entity = _comandaRepository.GetComandasbyEstabelecimentos(idestabelecimento).GetAwaiter().GetResult(); 
+            var outputModel = _mapper.Map<IEnumerable<ComandaModel>>(entity);
+            return outputModel;
         }
     }
 }

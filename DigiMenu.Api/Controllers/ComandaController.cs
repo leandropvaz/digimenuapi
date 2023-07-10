@@ -70,6 +70,13 @@ namespace DigiMenu.Api.Controllers
             return Execute(() => _comandaService.GetPreviewComanda(idComanda));
         }
 
+        [HttpGet]
+        [Route("admin/GetComandasbyEstabelecimentos")]
+        public IActionResult GetComandasbyEstabelecimentos(int idestabelecimento)
+        {
+            return Execute(() => _comandaService.GetComandasbyEstabelecimentos(idestabelecimento));
+        }
+
 
         private IActionResult Execute(Func<object> func)
         {

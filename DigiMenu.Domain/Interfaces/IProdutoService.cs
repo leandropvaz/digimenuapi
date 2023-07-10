@@ -8,8 +8,14 @@ namespace DigiMenu.Domain.Interfaces
 
         IEnumerable<ProdutoModel> GetProdutosByEstabelecimento(int id);
 
-        IEnumerable<ProdutoModel> GetProdutosByTipo(int idEstabelcimento,int idTipoProduto);
+        IEnumerable<ProdutoModel> GetProdutosByTipo(int idEstabelcimento, int idTipoProduto);
 
-        IEnumerable<TipoProdutoModel> GetTipoProdutos();   
+        IEnumerable<TipoProdutoModel> GetTipoProdutos();
+
+        ProdutoModel CadastrarProduto(ProdutoModel produto);
+        bool DeletarProduto(int produto);
+        bool AlterarProduto(ProdutoModel produto);
+
+
     }
 }

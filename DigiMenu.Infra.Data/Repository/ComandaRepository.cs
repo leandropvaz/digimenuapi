@@ -66,6 +66,19 @@ namespace DigiMenu.Infra.Data.Repository
             }
         }
 
+        public async Task<IEnumerable<comanda>> GetComandasbyEstabelecimentos(int idestabelecimento)
+        {
+            var query = from c in _context.comanda
+                        join m in _context.mesa on c.mesa equals m.id
+                        where m.estabelecimento == idestabelecimento
+                        select c;
+
+            var result = await query.ToListAsync();
+
+            return result;
+        }
+
+
 
 
         public string ValorComanda(int comanda)
