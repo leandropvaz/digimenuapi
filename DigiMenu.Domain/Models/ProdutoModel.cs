@@ -10,7 +10,9 @@ namespace DigiMenu.Domain.Models
     {
         public int id { get; set; }
 
-        public string descricao { get; set; } = null!;
+        public string nome { get; set; } = null!;
+
+        public string? descricao { get; set; }
 
         public int estabelecimento { get; set; }
 

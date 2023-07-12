@@ -162,6 +162,9 @@ public partial class DigiMenuContext : DbContext
             entity.Property(e => e.descricao)
                 .HasMaxLength(250)
                 .IsUnicode(false);
+            entity.Property(e => e.nome)
+                .HasMaxLength(250)
+                .IsUnicode(false);
             entity.Property(e => e.preco).HasColumnType("decimal(10, 2)");
 
             entity.HasOne(d => d.TipoNavigation).WithMany(p => p.produtos)
@@ -212,8 +215,8 @@ public partial class DigiMenuContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false);
             entity.Property(e => e.senha)
-                .HasMaxLength(8)
-                .IsUnicode(false);
+                .IsUnicode(false)
+                .HasDefaultValueSql("('NULL')");
             entity.Property(e => e.telefone)
                 .HasMaxLength(20)
                 .IsUnicode(false);

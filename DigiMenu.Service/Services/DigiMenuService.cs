@@ -5,7 +5,7 @@ using DigiMenu.Domain.Models;
 
 namespace DigiMenu.Service.Services
 {
-    public class DigiMenuService<TEntity> : IDigiMenuService<TEntity> where TEntity : BaseEntity
+    public class DigiMenuService<TEntity> : IDigiMenuService<TEntity> where TEntity : class
     {
         private readonly IRepository<TEntity> _baseRepository;
         private readonly IMapper _mapper;

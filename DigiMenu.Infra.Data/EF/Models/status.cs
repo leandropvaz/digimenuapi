@@ -1,10 +1,9 @@
-﻿using DigiMenu.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DigiMenu.Infra.Data.EF.Models;
 
-public partial class status : BaseEntity
+public partial class status
 {
     public int id { get; set; }
 

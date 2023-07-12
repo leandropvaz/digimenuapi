@@ -1,14 +1,15 @@
-﻿using DigiMenu.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DigiMenu.Infra.Data.EF.Models;
 
-public partial class produtos : BaseEntity
+public partial class produtos
 {
     public int id { get; set; }
 
-    public string descricao { get; set; } = null!;
+    public string nome { get; set; } = null!;
+
+    public string? descricao { get; set; }
 
     public int estabelecimento { get; set; }
 

@@ -26,9 +26,7 @@ namespace DigiMenu.Infra.Data.Repository
             var result = await base._context.comanda
               .Include(x => x.pedidos)
               .Where(x => x.id == comanda).ToListAsync();
-
             return result;
-
         }
 
         public async Task<IEnumerable<PreviewComanda>> GetPreviewComanda(int comanda)
@@ -77,9 +75,6 @@ namespace DigiMenu.Infra.Data.Repository
 
             return result;
         }
-
-
-
 
         public string ValorComanda(int comanda)
         {

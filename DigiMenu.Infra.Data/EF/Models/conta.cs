@@ -1,10 +1,9 @@
-﻿using DigiMenu.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DigiMenu.Infra.Data.EF.Models;
 
-public partial class conta : BaseEntity
+public partial class conta
 {
     public Guid id { get; set; }
 

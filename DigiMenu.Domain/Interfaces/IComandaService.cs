@@ -13,7 +13,6 @@ namespace DigiMenu.Domain.Interfaces
         int FecharComanda(int id);
         int GetStatusComanda(int id);
         IEnumerable<PreviewComanda> GetPreviewComanda(int comanda);
-
         IEnumerable<ComandaModel> GetComandasbyEstabelecimentos(int idestabelecimento);
     }
 }

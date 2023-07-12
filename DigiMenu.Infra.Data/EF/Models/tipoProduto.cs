@@ -1,10 +1,9 @@
-﻿using DigiMenu.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DigiMenu.Infra.Data.EF.Models;
 
-public partial class tipoProduto : BaseEntity
+public partial class tipoProduto
 {
     public int id { get; set; }
 

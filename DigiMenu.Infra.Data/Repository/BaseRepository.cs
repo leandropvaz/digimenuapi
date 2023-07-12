@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 namespace DigiMenu.Infra.Data.Repository
 { 
 
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly DigiMenuContext _context;
         private readonly DbSet<TEntity> _dbSet;
@@ -66,15 +66,20 @@ namespace DigiMenu.Infra.Data.Repository
 
         public TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includeProperties)
         {
-            IQueryable<TEntity> query = _context.Set<TEntity>();
-
-            foreach (var includeProperty in includeProperties)
-            {
-                query = query.Include(includeProperty);
-            }
-
-            return query.FirstOrDefault(e => e.id == id);
+            throw new NotImplementedException();
         }
+
+        //public TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includeProperties)
+        //{
+        //    IQueryable<TEntity> query = _context.Set<TEntity>();
+
+        //    foreach (var includeProperty in includeProperties)
+        //    {
+        //        query = query.Include(includeProperty);
+        //    }
+
+        //    return query.FirstOrDefault(e => e.id == id);
+        //}
     }
 
 }
