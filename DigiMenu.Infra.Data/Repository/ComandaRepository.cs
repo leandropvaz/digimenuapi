@@ -41,13 +41,13 @@ namespace DigiMenu.Infra.Data.Repository
                                  select new { pi, p, pr, c })
                    .AsEnumerable()
                    .GroupBy(
-                       x => new { x.pr.descricao, x.pr.preco },
+                       x => new { x.pr.nome, x.pr.preco },
                        x => new { x.pi, x.pr })
-                   .OrderBy(g => g.Key.descricao)
+                   .OrderBy(g => g.Key.nome)
                    .Select((g, index) => new PreviewComanda
                    {
                        item = (index + 1).ToString(),
-                       descricao = g.Key.descricao,
+                       descricao = g.Key.nome,
                        precoUnitario = g.Key.preco.ToString(),
                        quantidade = g.Sum(x => x.pi.quantidade).ToString(),
                        precoTotal = g.Sum(x => x.pr.preco).ToString()
