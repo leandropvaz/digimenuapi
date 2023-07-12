@@ -41,7 +41,6 @@ namespace DigiMenu.Infra.Data.Repository
 
             return resultado;
         }
-
-
+      
     }
 }

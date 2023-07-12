@@ -29,5 +29,13 @@ namespace DigiMenu.Infra.Data.Repository
             return result;
 
         }
+        public string GetNomeUsuario(int idusuario)
+        {
+            var nome = _context.usuario
+                        .Where(u => u.id == idusuario)
+                        .Select(u => u.nome)
+                        .FirstOrDefault();
+            return nome;
+        }
     }
 }

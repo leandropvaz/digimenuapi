@@ -34,7 +34,8 @@ namespace DigiMenu.Service.Services
 
             foreach (var pedido in outputModel)
             {
-                pedido.dataPedidoFeito = Convert.ToDateTime(pedido.dataPedidoFeito).ToString("dd/MM/yyyy HH:mm:ss", new CultureInfo("pt-BR")); // Formatação da data
+                pedido.dataPedidoFeito = Convert.ToDateTime(pedido.dataPedidoFeito).ToString("dd/MM/yyyy HH:mm:ss", new CultureInfo("pt-BR"));
+                pedido.responsavel = _pedidoRepository.GetNomeUsuario(Convert.ToInt32(pedido.responsavel));
             }
             return outputModel;
         }
