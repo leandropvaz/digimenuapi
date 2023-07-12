@@ -71,5 +71,14 @@ namespace DigiMenu.Service.Services
             var outputModel = _mapper.Map<IEnumerable<ComandaModel>>(entity);
             return outputModel;
         }
+        public ValoresComanda GetValoresComanda(int comanda)
+        {
+            var debito = _comandaRepository.ValorComanda(comanda);
+            var credito = _comandaRepository.ValorCreditoComanda(comanda);
+            ValoresComanda valoresComanda = new ValoresComanda();
+            valoresComanda.Credito = credito;
+            valoresComanda.Debito = debito;
+            return valoresComanda;
+        }
     }
 }

@@ -4,6 +4,7 @@ using DigiMenu.Infra.Data.EF.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,7 +92,7 @@ namespace DigiMenu.Infra.Data.Repository
                                   Valor = g.Sum(x => x.prd.preco * Convert.ToDecimal(x.pedItem.quantidade))
                               }).FirstOrDefault();
 
-                return result.Valor.ToString();
+                return result.Valor.ToString("###,###,##0.00", CultureInfo.GetCultureInfo("pt-BR"));
             }
             catch (Exception)
             {
@@ -108,7 +109,7 @@ namespace DigiMenu.Infra.Data.Repository
                           where credito.comanda == comanda
                           select credito.valor).Sum();
 
-            return result.ToString();
+            return result.ToString("###,###,##0.00", CultureInfo.GetCultureInfo("pt-BR"));
             }
             catch (Exception)
             {
