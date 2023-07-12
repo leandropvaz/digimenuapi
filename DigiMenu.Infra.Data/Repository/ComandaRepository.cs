@@ -39,21 +39,17 @@ namespace DigiMenu.Infra.Data.Repository
                                  join pr in _context.produtos on pi.produto equals pr.id
                                  join c in _context.comanda on p.comanda equals c.id
                                  where c.id == comanda
-                                 select new { pi, p, pr, c })
-                   .AsEnumerable()
-                   .GroupBy(
-                       x => new { x.pr.nome, x.pr.preco },
-                       x => new { x.pi, x.pr })
-                   .OrderBy(g => g.Key.nome)
-                   .Select((g, index) => new PreviewComanda
-                   {
-                       item = (index + 1).ToString(),
-                       descricao = g.Key.nome,
-                       precoUnitario = g.Key.preco.ToString(),
-                       quantidade = g.Sum(x => x.pi.quantidade).ToString(),
-                       precoTotal = g.Sum(x => x.pr.preco).ToString()
-                   })
-                   .ToList();
+                                 group new { pi, pr } by new { pr.nome, pr.preco } into g
+                                 orderby g.Key.nome
+                                 select new PreviewComanda
+                                 {
+                                     item = (g.Key.nome).ToString(),
+                                     descricao = g.Key.nome,
+                                     precoUnitario = g.Key.preco.ToString(),
+                                     quantidade = g.Sum(x => x.pi.quantidade).ToString(),
+                                     precoTotal = (g.Sum(x => x.pr.preco * x.pi.quantidade)).ToString()
+                                 }).ToList();
+
 
 
 
